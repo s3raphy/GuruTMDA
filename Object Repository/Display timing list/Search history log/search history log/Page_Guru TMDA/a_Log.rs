@@ -3,7 +3,8 @@
    <description></description>
    <name>a_Log</name>
    <tag></tag>
-   <elementGuidId>06fe98e1-d4ce-49b8-9d4a-469501d3402e</elementGuidId>
+   <elementGuidId>733ed3a4-a74c-4a03-b68f-ae4816f7decb</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -13,11 +14,11 @@
       <value>a</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>class</name>
       <type>Main</type>
-      <value>/html[1]/body[1]/my-app[1]/app-header[1]/div[@class=&quot;headers&quot;]/nav[@class=&quot;navbar navbar-dark bg-inverse centurygothic-font&quot;]/ul[@class=&quot;nav navbar-nav&quot;]/li[3]/a[@class=&quot;nav-link&quot;]</value>
+      <value>nav-link</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -28,16 +29,16 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>contains</matchCondition>
+      <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>Log</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>nav-link</value>
+      <value>/html[1]/body[1]/my-app[1]/app-header[1]/div[@class=&quot;headers&quot;]/nav[@class=&quot;navbar navbar-dark bg-inverse centurygothic-font&quot;]/ul[@class=&quot;nav navbar-nav&quot;]/li[3]/a[@class=&quot;nav-link&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

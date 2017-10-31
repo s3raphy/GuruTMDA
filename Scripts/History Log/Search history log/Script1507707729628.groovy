@@ -20,37 +20,327 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-not_run: WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.openBrowser('')
 
-not_run: WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.maximizeWindow()
 
-not_run: WebUI.navigateToUrl('192.168.11.59', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.navigateToUrl('192.168.11.59')
 
-not_run: WebUI.click(findTestObject('Page_Guru TMDA/span_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Guru TMDA/span_Login'))
 
-not_run: WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'), 'piew')
 
-not_run: WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), 'piew')
 
-not_run: WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'))
 
-WebUI.click(findTestObject('Search history log/Page_Guru TMDA/a_Log'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/a_Log'))
 
-WebUI.click(findTestObject('Search history log/Page_Guru TMDA (2)/span_mydpicon icon-mydpcalenda'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Search history log/search history log/span_2'))
 
-WebUI.click(findTestObject('Search history log/Page_Guru TMDA (2)/button_headertodaybtn headerto'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__anim'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Search history log/Page_Guru TMDA (2)/th_w3-center'), 2, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
 
-WebUI.selectOptionByValue(findTestObject('Search history log/Page_Guru TMDA (2)/select_serach_type'), '1', true, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
 
-WebUI.verifyElementPresent(findTestObject('Search history log/Page_Guru TMDA (2)/td'), 2, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-untouched ng-pristine'))
 
-WebUI.selectOptionByValue(findTestObject('Search history log/Page_Guru TMDA (2)/select_serach_type'), '2', true, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
-WebUI.click(findTestObject('Search history log/Page_Guru TMDA (2)/button_Preview'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '1', true)
 
-WebUI.click(findTestObject('Search history log/Page_Guru TMDA (2)/i_fa fa-times w3-xlarge w3-tex'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Search history log/search history log//span_2'))
 
-WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__anim_1'), 5, 
+    FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '2', true)
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '0', FailureHandling.STOP_ON_FAILURE)
+
+WebUI.mouseOver(findTestObject('Search history log/search history log//span_2'))
+
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__anim'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '1', true)
+
+WebUI.mouseOver(findTestObject('Search history log/search history log//span_2'))
+
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container 007'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '2', true)
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '0', FailureHandling.STOP_ON_FAILURE)
+
+WebUI.mouseOver(findTestObject('Search history log/search history log//span_2'))
+
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__anim'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '1', true)
+
+WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_'))
+
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container 007'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '2', true)
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/div_close'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+WebUI.setText(findTestObject('Search history log/search history log/input_selection ng-untouched n'), '11/10/2017')
+
+WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '0', FailureHandling.STOP_ON_FAILURE)
+
+WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_ (1)'))
+
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__008'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_ (1)'))
+
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__008'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '1', true)
+
+WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_ (1)'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '2', true)
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '0', FailureHandling.STOP_ON_FAILURE)
+
+WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_ (1)'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '1', true)
+
+WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_ (1)'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '2', true)
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '0', FailureHandling.STOP_ON_FAILURE)
+
+WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_ (1)'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '1', true)
+
+WebUI.mouseOver(findTestObject('Search history log/search history log/span_ 12345689'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '2', true)
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+WebUI.setText(findTestObject('Search history log/search history log/input_selection ng-untouched n (1)'), '31/10/2017')
+
+WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '0', FailureHandling.STOP_ON_FAILURE)
+
+WebUI.mouseOver(findTestObject('Search history log/search history log/span_4'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '1', true)
+
+WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '2', true)
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+not_run: WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '0', FailureHandling.STOP_ON_FAILURE)
+
+not_run: WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_'))
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+not_run: WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '1', true)
+
+not_run: WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_ (1)'))
+
+not_run: WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_'))
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+not_run: WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '2', true)
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+not_run: WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '0', FailureHandling.STOP_ON_FAILURE)
+
+not_run: WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_'))
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+not_run: WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '1', true)
+
+not_run: WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_'))
+
+not_run: WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_ (1)'))
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/div_w3-padding-16'))
+
+not_run: WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '2', true)
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_mydpicon icon-mydpremove'))
+
+not_run: WebUI.setText(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_selection ng-valid ng-di'), 
+    '3')
+
+not_run: WebUI.setText(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_selection ng-valid ng-di'), 
+    '11/10/2017')
+
+not_run: WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    'All', true)
+
+not_run: WebUI.closeBrowser()
 

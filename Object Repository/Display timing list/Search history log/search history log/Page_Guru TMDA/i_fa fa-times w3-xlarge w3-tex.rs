@@ -1,43 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Log</name>
+   <name>i_fa fa-times w3-xlarge w3-tex</name>
    <tag></tag>
-   <elementGuidId>06fe98e1-d4ce-49b8-9d4a-469501d3402e</elementGuidId>
+   <elementGuidId>8dacfab1-fdd6-42ca-a7af-9f672b45e345</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>a</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath</name>
-      <type>Main</type>
-      <value>/html[1]/body[1]/my-app[1]/app-header[1]/div[@class=&quot;headers&quot;]/nav[@class=&quot;navbar navbar-dark bg-inverse centurygothic-font&quot;]/ul[@class=&quot;nav navbar-nav&quot;]/li[3]/a[@class=&quot;nav-link&quot;]</value>
+      <value>i</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>href</name>
+      <name>aria-hidden</name>
       <type>Main</type>
-      <value>/history-log</value>
+      <value>true</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>contains</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>Log</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>nav-link</value>
+      <value>fa fa-times w3-xlarge w3-text-green</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;close&quot;)/div[1]/i[@class=&quot;fa fa-times w3-xlarge w3-text-green&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

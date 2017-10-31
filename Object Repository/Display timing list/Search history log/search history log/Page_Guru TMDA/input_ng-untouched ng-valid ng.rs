@@ -1,43 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Log</name>
+   <name>input_ng-untouched ng-valid ng</name>
    <tag></tag>
-   <elementGuidId>06fe98e1-d4ce-49b8-9d4a-469501d3402e</elementGuidId>
+   <elementGuidId>63924a93-7170-44eb-b108-d1a50753ef37</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>a</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath</name>
-      <type>Main</type>
-      <value>/html[1]/body[1]/my-app[1]/app-header[1]/div[@class=&quot;headers&quot;]/nav[@class=&quot;navbar navbar-dark bg-inverse centurygothic-font&quot;]/ul[@class=&quot;nav navbar-nav&quot;]/li[3]/a[@class=&quot;nav-link&quot;]</value>
+      <value>input</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>href</name>
+      <name>placeholder</name>
       <type>Main</type>
-      <value>/history-log</value>
+      <value>Username</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>contains</matchCondition>
-      <name>text</name>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
       <type>Main</type>
-      <value>Log</value>
+      <value>text</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>nav-link</value>
+      <value>ng-untouched ng-valid ng-dirty</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;login-bg&quot;]/my-app[1]/app-login[1]/div[1]/div[@class=&quot;login-page centurygothic-font&quot;]/div[@class=&quot;form&quot;]/form[@class=&quot;login-form ng-untouched ng-pristine ng-valid&quot;]/input[@class=&quot;ng-untouched ng-valid ng-dirty&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
