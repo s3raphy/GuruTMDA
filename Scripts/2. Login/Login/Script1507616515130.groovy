@@ -26,6 +26,7 @@ not_run: WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: WebUI.navigateToUrl('192.168.11.59', FailureHandling.CONTINUE_ON_FAILURE)
 
+'กดปุ่ม login'
 WebUI.click(findTestObject('Page_Guru TMDA/span_Login'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
