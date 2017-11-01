@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Edit user profile</name>
-   <tag>WEB UI</tag>
-   <comment></comment>
-   <testCaseGuid>32185244-0729-4d21-ac13-f49d3a8cb2fa</testCaseGuid>
-</TestCaseEntity>

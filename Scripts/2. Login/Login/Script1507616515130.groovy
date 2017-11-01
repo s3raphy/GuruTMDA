@@ -20,48 +20,81 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-not_run: WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
+'เปิดเบราเซอร์'
+WebUI.openBrowser('', FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
+'ขยายหน้าต่างเบราเซอร์'
+WebUI.maximizeWindow(FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.navigateToUrl('192.168.11.59', FailureHandling.CONTINUE_ON_FAILURE)
+'เข้าสู่ URL'
+WebUI.navigateToUrl('192.168.11.59', FailureHandling.STOP_ON_FAILURE)
 
 'กดปุ่ม login'
-WebUI.click(findTestObject('Page_Guru TMDA/span_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Guru TMDA/span_Login'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+'กรอกรหัสผ่าน'
+WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), '1234', FailureHandling.STOP_ON_FAILURE)
 
+'กดปุ่ม Login'
+WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.STOP_ON_FAILURE)
+
+'ยืนยันข้อความแจ้งเตือน Username is not null'
 WebUI.verifyElementPresent(findTestObject('Login/div_Username is not null.'), 2, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'), 'fortest', FailureHandling.CONTINUE_ON_FAILURE)
+'กรอก Username '
+WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'), 'Cremeee', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+'กดปุ่ม Login'
+WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Login/div_Password is not null.'), 2, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), 'fortest', FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.verifyElementPresent(findTestObject('Login/div_User Not Activate'), 2, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'), 'fortesteigjofsdjigojsofgasdsaqwe', FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
-
+'ยืนยันข้อความแจ้งเตือน User Not Found'
 WebUI.verifyElementPresent(findTestObject('Login/div_User Not Found'), 2, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
+'กรอก Username'
+WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'), 'bbb', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+'กรอกรหัสผ่าน'
+WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), 'bbb', FailureHandling.STOP_ON_FAILURE)
 
+'กดปุ่ม Login'
+WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.STOP_ON_FAILURE)
+
+'ยืนยันข้อความแจ้งเตือน User Not Activate'
+WebUI.verifyElementPresent(findTestObject('Login/div_User Not Activate'), 2, FailureHandling.CONTINUE_ON_FAILURE)
+
+'กรอก Username'
+WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'), 'Creme', FailureHandling.STOP_ON_FAILURE)
+
+'ลบข้อความในกล่องข้อความรหัสผ่าน'
+WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), 'e', FailureHandling.STOP_ON_FAILURE)
+
+'ลบข้อความในกล่องข้อความรหัสผ่าน'
+WebUI.sendKeys(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), Keys.chord(Keys.BACK_SPACE), FailureHandling.STOP_ON_FAILURE)
+
+'กดปุ่ม Login'
+WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.STOP_ON_FAILURE)
+
+'ยืนยันข้อความแจ้งเตือน Password is not null'
+WebUI.verifyElementPresent(findTestObject('Login/div_Password is not null.'), 2, FailureHandling.CONTINUE_ON_FAILURE)
+
+'กรอกรหัสผ่าน'
+WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), '55555', FailureHandling.STOP_ON_FAILURE)
+
+'กดปุ่ม Login'
+WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.STOP_ON_FAILURE)
+
+'ยืนยันข้อความแจ้งเตือน Incorrect Password\r\n'
 WebUI.verifyElementPresent(findTestObject('Login/div_Incorrect Password'), 2, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
+'กรอกรหัสผ่าน'
+WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), '1234', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+'กดปุ่ม Login'
+WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.STOP_ON_FAILURE)
 
+'ตรวจสอบว่ามีเมนู Help หลังจาก Login สำเร็จ'
 WebUI.verifyElementPresent(findTestObject('Page_Guru TMDA (7)/a_Help'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
+'ปิดเบราเซอร์'
+WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
 

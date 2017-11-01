@@ -39,7 +39,7 @@
       <guid>be547aac-aa34-4bbb-91ef-a35217ceee28</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Basic work/Upload File without labelling</testCaseId>
+      <testCaseId>Test Cases/3. Menu Text Prediction/Upload File without labelling</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>f78125f7-92f6-40e2-962d-3415e407d44c</guid>
@@ -99,37 +99,31 @@
       <guid>6142d49b-f9b1-4009-8aff-0a737729ed9b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/User management/Search user list</testCaseId>
+      <testCaseId>Test Cases/4. Menu User Management/Search user list</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>423817f4-ee72-45b3-bc56-b3f7be421f50</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/User management/Change role</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>6491891e-fec9-4f81-9df7-4af3dbb3f80c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/User management/Change status</testCaseId>
+      <testCaseId>Test Cases/4. Menu User Management/Change role and status</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>dcb19bfa-3a6d-4244-a904-95b89e0ac91c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/User management/Edit user profile/Edit user profile</testCaseId>
+      <testCaseId>Test Cases/4. Menu User Management/Edit profile</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>64168cde-2231-4afb-a0b1-e569ca88987e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/User management/Edit user profile/Change user profile picture</testCaseId>
+      <testCaseId>Test Cases/4. Menu User Management/Change user profile picture</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>41acf0c0-b28c-4100-95ae-03b97e280cab</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/User management/Edit user profile/Reset password</testCaseId>
+      <testCaseId>Test Cases/4. Menu User Management/Reset and Change password</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>1b447091-73b9-41bd-b575-ef6ae1d92bc2</guid>

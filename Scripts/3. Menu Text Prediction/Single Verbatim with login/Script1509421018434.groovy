@@ -33,16 +33,22 @@ not_run: WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-
 
 not_run: WebUI.click(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
 
+'กดปุ่ม Predict'
 WebUI.click(findTestObject('Page single/Page_Guru TMDA/button_btn btn-link'), FailureHandling.CONTINUE_ON_FAILURE)
 
+'ยืนยันข้อความแจ้งเตือน Verbatim is not null'
 WebUI.verifyElementPresent(findTestObject('single verbatim with login/span_Verbatim is not null'), 2, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_Guru TMDA (2)/input_input-text w3-large inpu'), '�?ริ�?ารดี �?ต�?รอ�?ิว�?า�?', FailureHandling.CONTINUE_ON_FAILURE)
+'กรอกข้อความ Predict'
+WebUI.setText(findTestObject('Page_Guru TMDA (2)/input_input-text w3-large inpu'), 'บริการดีแต่รอคิวนาน', FailureHandling.CONTINUE_ON_FAILURE)
 
+'กดปุ่ม Predict'
 WebUI.click(findTestObject('Page single/Page_Guru TMDA/button_btn btn-link'), FailureHandling.CONTINUE_ON_FAILURE)
 
+'ตรวจสอบผลลัพธ์ Predict บรรทัดที่ 1'
 WebUI.verifyElementPresent(findTestObject('Page_Guru TMDA (2)/div_row'), 20, FailureHandling.CONTINUE_ON_FAILURE)
 
+'ตรวจสอบผลลัพธ์ Predict บรรทัดที่ 2'
 WebUI.verifyElementPresent(findTestObject('Page_Guru TMDA (2)/div_predict-result'), 20, FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
