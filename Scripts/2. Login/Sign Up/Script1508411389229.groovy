@@ -39,10 +39,9 @@ WebUI.scrollToElement(findTestObject('signup/login/a_Sign Up'), 3, FailureHandli
 WebUI.click(findTestObject('signup/login/a_Sign Up'), FailureHandling.CONTINUE_ON_FAILURE)
 
 'เก็บเวลาปัจจุบันของเครื่องคอมพิวเตอร์'
-Date date = new Date()
-
+Date date = new Date("yyyyy-mm-dd")
 'เก็บเวลาปัจจุบันของเครื่องคอมพิวเตอร์'
-System.out.println('Current Date : ' + date.toString())
+System.out.println('CurrentDate:'+date.toString())
 
 'กรอก Username'
 WebUI.setText(findTestObject('signup/signup/input_username'), 'Creme', FailureHandling.STOP_ON_FAILURE)
