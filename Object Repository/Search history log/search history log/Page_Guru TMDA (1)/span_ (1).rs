@@ -28,12 +28,10 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>contains</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>
-                        'บริการดี แต่รอคิวนาน'
-                      </value>
+      <value>บริการดีแต่รอคิวนาน</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

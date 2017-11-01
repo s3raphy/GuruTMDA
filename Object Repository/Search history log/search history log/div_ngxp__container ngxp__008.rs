@@ -4,6 +4,12 @@
    <name>div_ngxp__container ngxp__008</name>
    <tag></tag>
    <elementGuidId>388aba77-bd21-4514-ab09-b4326bd7af38</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[count(. | //*[@role = 'popper']) = count(//*[@role = 'popper'])][count(. | //*[@class = 'ngxp__container ngxp__animation']) = count(//*[@class = 'ngxp__container ngxp__animation'])]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -28,14 +34,14 @@
       <value>ngxp__container ngxp__animation</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>x-placement</name>
       <type>Main</type>
       <value>top</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

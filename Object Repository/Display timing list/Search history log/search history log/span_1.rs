@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_4</name>
+   <name>span_1</name>
    <tag></tag>
-   <elementGuidId>a3f547d3-4ed4-4ec9-a46f-a1a553704e08</elementGuidId>
-   <selectorCollection>
-      <entry>
-         <key>BASIC</key>
-         <value>//span[count(. | //*[@class = 'hover']) = count(//*[@class = 'hover'])]</value>
-      </entry>
-   </selectorCollection>
+   <elementGuidId>c7ba7ed9-cd4e-413c-aae3-a9f87ba7b361</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -40,6 +34,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[1]/my-app[1]/app-history-log[1]/div[@class=&quot;container-fluid&quot;]/div[2]/div[@class=&quot;row&quot;]/div[@class=&quot;container centurygothic-font&quot;]/div[@class=&quot;row w3-margin-bottom&quot;]/div[1]/div[@class=&quot;table-responsive&quot;]/table[@class=&quot;table tb-log&quot;]/tbody[1]/tr[8]/td[4]/span[@class=&quot;hover&quot;]</value>
+      <value>/html[1]/body[1]/my-app[1]/app-history-log[1]/div[@class=&quot;container-fluid&quot;]/div[2]/div[@class=&quot;row&quot;]/div[@class=&quot;container centurygothic-font&quot;]/div[@class=&quot;row w3-margin-bottom&quot;]/div[1]/div[@class=&quot;table-responsive&quot;]/table[@class=&quot;table tb-log&quot;]/tbody[1]/tr[2]/td[4]/span[@class=&quot;hover&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

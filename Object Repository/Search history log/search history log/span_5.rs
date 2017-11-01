@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_  (1)</name>
+   <name>span_5</name>
    <tag></tag>
-   <elementGuidId>e389e7c5-f039-4575-9a52-7d9e717ec088</elementGuidId>
+   <elementGuidId>1402e928-68fd-4619-81c8-7c1acb76c2c5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[count(. | //*[@class = 'hover']) = count(//*[@class = 'hover'])]</value>
+         <value>//span[count(. | //*[@class = 'hover']) = count(//*[@class = 'hover'])][count(. | /html[1]/body[1]/my-app[1]/app-history-log[1]/div[@class=&quot;container-fluid&quot;]/div[2]/div[@class=&quot;row&quot;]/div[@class=&quot;container centurygothic-font&quot;]/div[@class=&quot;row w3-margin-bottom&quot;]/div[1]/div[@class=&quot;table-responsive&quot;]/table[@class=&quot;table tb-log&quot;]/tbody[1]/tr[2]/td[4]/span[@class=&quot;hover&quot;]) = count(/html[1]/body[1]/my-app[1]/app-history-log[1]/div[@class=&quot;container-fluid&quot;]/div[2]/div[@class=&quot;row&quot;]/div[@class=&quot;container centurygothic-font&quot;]/div[@class=&quot;row w3-margin-bottom&quot;]/div[1]/div[@class=&quot;table-responsive&quot;]/table[@class=&quot;table tb-log&quot;]/tbody[1]/tr[2]/td[4]/span[@class=&quot;hover&quot;])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -32,11 +32,11 @@
       <name>text</name>
       <type>Main</type>
       <value>
-                        'บริการดี แต่รอคิวนาน'
+                        'บริการดีแต่รอคิวนาน'
                       </value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

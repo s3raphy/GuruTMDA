@@ -32,315 +32,481 @@ WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'
 
 WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), 'piew')
 
+'-สิ้นสุดการทดสอบ login\r\n'
 WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'))
 
+'กดปุ่ม Log'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/a_Log'))
 
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
 WebUI.mouseOver(findTestObject('Search history log/search history log/span_2'))
 
+'ตรวจสอบ pop up preview ของไฟล์ single'
 WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__anim'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+'กดปุ่ม preview ของไฟล์ multiple'
+WebUI.click(findTestObject('Search history log/search history log/button_Preview'))
 
+'กดปุ่มกากกะบาทที่หน้าต่าง preview'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
 
+'ทำเครื่องหมายกากถูกหลังรายการที่เลือก'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-untouched ng-pristine'))
 
+'-กดปุ่ม export สิ้นสุดการทดสอบข้อมูลทั้งหมด (All) วันปัจจุบัน โดยกด preview กดเลือกรายการ  และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'เลือกประเภทการทำนาย เป็น single'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '1', true)
 
-WebUI.mouseOver(findTestObject('Search history log/search history log//span_2'))
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
+WebUI.mouseOver(findTestObject('Search history log/search history log//span_3'))
 
-WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__anim_1'), 5, 
+'ตรวจสอบ pop up preview ของไฟล์ single'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//div_ngxp__container ngxp__anim003'), 5, 
     FailureHandling.CONTINUE_ON_FAILURE)
 
+'ทำเครื่องหมายกากถูกหลังรายการที่เลือก'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
 
+'-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล single วันปัจจุบัน โดยกด preview กดเลือกรายการ  และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'เลือกประเภทการทำนาย เป็น multiple'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '2', true)
 
+'กดปุ่ม preview ของไฟล์ multiple'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
 
+'กดปุ่มกากกะบาทที่หน้าต่าง preview'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
 
+'ทำเครื่องหมายกากถูกหลังรายการที่เลือก'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
 
+'-กดป่ม export สิ้นสุดการทดสอบข้อมูล multiple วันปัจจุบัน โดยกด preview กดเลือกรายการ  และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'เลือกประเภทการทำนายเป็น all'
 WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '0', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Search history log/search history log//span_2'))
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
+WebUI.mouseOver(findTestObject('Search history log/search history log//span_4'))
 
-WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__anim'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+'ตรวจสอบ pop up preview ของไฟล์ single'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//div_ngxp__container ngxp__anim004'), 5, 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
+'กดปุ่ม preview ของไฟล์ multiple'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
 
+'กดปุ่มกากกะบาทที่หน้าต่าง preview'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
 
+'-ทำเครื่องหมายกากถูกหลังรายการที่เลือก สิ้นสุดการทดสอบข้อมูลทั้งหมด (All) วันปัจจุบัน โดยกด preview และกดเลือกรายการ'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
 
-WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
-
+'เลือกประเภทการทำนาย เป็น single'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '1', true)
 
-WebUI.mouseOver(findTestObject('Search history log/search history log//span_2'))
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
+WebUI.mouseOver(findTestObject('Search history log/search history log//span_5'))
 
-WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container 007'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+'ตรวจสอบ pop up preview ของไฟล์ single'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__anim005'), 5, 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
+'-ทำเครื่องหมายกากถูกหลังรายการที่เลือก สิ้นสุดการทดสอบข้อมูล single วันปัจจุบัน โดยกด preview และกดเลือกรายการ'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
 
+'เลือกประเภทการทำนาย เป็น multiple'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '2', true)
 
+'กดปุ่ม preview ของไฟล์ multiple'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
 
+'กดปุ่มกากกะบาทที่หน้าต่าง preview'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
 
+'-ทำเครื่องหมายกากถูกหลังรายการที่เลือก สิ้นสุดการทดสอบข้อมูล multiple วันปัจจุบัน โดยกด preview และกดเลือกรายการ'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
 
+'เลือกประเภทการทำนาย เป็น all'
 WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '0', FailureHandling.STOP_ON_FAILURE)
 
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
 WebUI.mouseOver(findTestObject('Search history log/search history log//span_2'))
 
+'ตรวจสอบ pop up preview ของไฟล์ single'
 WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__anim'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
+'กดปุ่ม preview ของไฟล์ multiple'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
 
+'กดปุ่มกากกะบาทที่หน้าต่าง preview'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
 
+'-กดปุ่ม export สิ้นสุดการทดสอบข้อมูลทั้งหมด (All) วันปัจจุบัน โดยกด preview และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'เลือกประเภทการทำนาย เป็น single'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '1', true)
 
-WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_'))
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
+WebUI.mouseOver(findTestObject('Search history log/search history log/span_8'))
 
-WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container 007'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+'ตรวจสอบ pop up preview ของไฟล์ single'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__anim'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
+'-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล single วันปัจจุบัน โดยกด preview และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'เลือกประเภทการทำนาย multiple'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '2', true)
 
+'กดปุ่ม preview ของไฟล์ multiple'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
 
-WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/div_close'))
+'กดปุ่มกากกะบาทที่หน้าต่าง preview'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA/i_fa fa-times w3-xlarge w3-tex'))
 
+'-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล multiple วันปัจจุบัน โดยกด preview และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'ใส่ข้อมูลวันที่ที่ต้องการค้นหา ใน input แรก'
 WebUI.setText(findTestObject('Search history log/search history log/input_selection ng-untouched n'), '11/10/2017')
 
+'เลือกประเภทการทำนาย all'
 WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '0', FailureHandling.STOP_ON_FAILURE)
 
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
 WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_ (1)'))
 
+'ตรวจสอบ pop up preview ของไฟล์ single'
 WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__008'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
 WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_ (1)'))
 
+'ตรวจสอบ pop up preview ของไฟล์ single'
 WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__008'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
+'กดปุ่ม preview ของไฟล์ multiple'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
 
+'กดปุ่มกากกะบาทที่หน้าต่าง preview'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
 
+'ทำเครื่องหมายกาถูกหลังรายการที่เลือก'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
 
+'-กดปุ่ม export สิ้นสุดการทดสอบข้อมูลทั้งหมด (All) วันที่ 11/10/2017 โดยกด preview กดเลือกรายการ และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'เลือกประเภทการทำนาย เป็น single'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '1', true)
 
-WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_ (1)'))
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
+WebUI.mouseOver(findTestObject('Search history log/search history log//span_ 6'))
 
+'ตรวจสอบ pop up preview ของไฟล์ single'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__anim006'), 5, 
+    FailureHandling.CONTINUE_ON_FAILURE)
+
+'ทำเครื่องหมายกาถูกหลังรายการที่เลือก'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
 
+'-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล single วันที่ 11/10/2017 โดยกด preview กดเลือกรายการ และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'เลือกประเภทการทำนาย เป็น multiple'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '2', true)
 
+'กดปุ่ม preview ของไฟล์ multiple'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
 
+'กดปุ่มกากกะบาทที่หน้าต่าง preview'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
 
+'ทำเครื่องหมายกาถูกหลังรายการที่เลือก'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
 
+'-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล multiple วันที่ 11/10/2017 โดยกด preview กดเลือกรายการ และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'เลือกประเภทการทำนาย เป็น all'
 WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '0', FailureHandling.STOP_ON_FAILURE)
 
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
 WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_ (1)'))
 
+'ตรวจสอบ pop up preview ของไฟล์ single'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__008'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'กดปุ่ม preview ของไฟล์ multiple'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
 
+'กดปุ่มกากกะบาทที่หน้าต่าง preview'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
 
+'-ทำเครื่องหมายกาถูกหลังรายการที่เลือก สิ้นสุดการทดสอบข้อมูลทั้งหมด (All) วันที่ 11/10/2017 โดยกด preview และกดเลือกรายการ'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
 
+'เลือกประเภทการทำนาย เป็น single'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '1', true)
 
-WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_ (1)'))
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
+WebUI.mouseOver(findTestObject('Search history log/search history log/span_ 11'))
 
+'ตรวจสอบ pop up preview ของไฟล์ single'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__008'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'-ทำเครื่องหมายกาถูกหลังรายการที่เลือก สิ้นสุดการทดสอบข้อมูล single วันที่ 11/10/2017 โดยกด preview และกดเลือกรายการ'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
 
+'เลือกประเภทการทำนาย  เป็น multiple'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '2', true)
 
+'กดปุ่ม preview ของไฟล์ multiple'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
 
+'กดปุ่มกากกะบาทที่หน้าต่าง preview'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
 
+'-ทำเครื่องหมายกาถูกหลังรายการที่เลือก สิ้นสุดการทดสอบข้อมูล multiple วันที่ 11/10/2017 โดยกด preview และกดเลือกรายการ'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
 
+'เลือกประเภทการทำนาย เป็น all\r\n'
 WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '0', FailureHandling.STOP_ON_FAILURE)
 
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
 WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_ (1)'))
 
+'ตรวจสอบ pop up preview ของไฟล์ single'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__008'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'กดปุ่ม preview ของไฟล์ multiple'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
 
+'กดปุ่มกากกะบาทที่หน้าต่าง preview'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
 
+'-กดปุ่ม export สิ้นสุดการทดสอบข้อมูลทั้งหมด (All) วันที่ 11/10/2017 โดยกด preview และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'เลือกประเภทการทำนาย เป็น single'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '1', true)
 
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
 WebUI.mouseOver(findTestObject('Search history log/search history log/span_ 12345689'))
 
+'ตรวจสอบ pop up preview ของไฟล์ single'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__008'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล single วันที่ 11/10/2017 โดยกด preview และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'เลือกประเภทการทำนาย เป็น multiple'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '2', true)
 
+'กดปุ่ม preview ของไฟล์ multiple'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
 
+'กดปุ่มกากกะบาทที่หน้าต่าง preview'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
 
+'-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล multi วันที่ 11/10/2017 โดยกด preview และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'ใส่ข้อมูลวันที่ ใน input หลัง'
 WebUI.setText(findTestObject('Search history log/search history log/input_selection ng-untouched n (1)'), '31/10/2017')
+
+'เลือกประเภทการทำนาย เป็น all'
+WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '0', FailureHandling.STOP_ON_FAILURE)
+
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
+WebUI.mouseOver(findTestObject('Search history log/search history log/span_ '))
+
+'ตรวจสอบ pop up preview ของไฟล์ single'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__008'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'กดปุ่ม preview ของไฟล์ multiple'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+'กดปุ่มกากกะบาทที่หน้าต่าง preview'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+'ทำเครื่องหมายกาถูกหลังรายการที่เลือก'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+'-กดปุ่ม export สิ้นสุดการทดสอบข้อมูลทั้งหมด (All) วันที่ 11/10/2017-31/11/2017 โดยกด preview กดเลือกรายการ และกด export'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+'เลือกประเภทการทำนาย เป็น single'
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '1', true)
+
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
+WebUI.mouseOver(findTestObject('Search history log/search history log/span_10'))
+
+'ตรวจสอบ pop up preview ของไฟล์ single'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__008'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'ทำเครื่องหมายกาถูกหลังรายการที่เลือก'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+'-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล single วันที่ 11/10/2017-31/11/2017 โดยกด preview กดเลือกรายการ และกด export'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+'เลือกประเภทการทำนาย เป็น multiple\r\n'
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '2', true)
+
+'กดปุ่ม preview ของไฟล์ multiple'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+'กดปุ่มกากกะบาทที่หน้าต่าง preview'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+'ทำเครื่องหมายกาถูกหลังรายการที่เลือก'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+'-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล multiple วันที่ 11/10/2017-31/11/2017 โดยกด preview กดเลือกรายการ และกด export'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+'เลือกประเภทการทำนาย เป็น all\r\n'
+WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '0', FailureHandling.STOP_ON_FAILURE)
+
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
+WebUI.mouseOver(findTestObject('Search history log/search history log/span_  (1)'))
+
+'ตรวจสอบ pop up preview ของไฟล์ single'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__008'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'กดปุ่ม preview ของไฟล์ multiple'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+'กดปุ่มกากกะบาทที่หน้าต่าง preview'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+'-ทำเครื่องหมายกาถูกหลังรายการที่เลือก สิ้นสุดการทดสอบข้อมูลทั้งหมด (All) วันที่ 11/10/2017-31/10/2017 โดยกด preview และกดเลือกรายการ'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+'เลือกประเภทการทำนาย เป็น single'
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '1', true)
+
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
+WebUI.mouseOver(findTestObject('Search history log/search history log/span_10'))
+
+'ตรวจสอบ pop up preview ของไฟล์ single'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__008'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
+WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_'))
+
+'ตรวจสอบ pop up preview ของไฟล์ single'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__008'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'-ทำเครื่องหมายกาถูกหลังรายการที่เลือก สิ้นสุดการทดสอบข้อมูล single วันที่ 11/10/2017-31/10/2017 โดยกด preview และกดเลือกรายการ'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+'เลือกประเภทการทำนาย เป็น multiple'
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '2', true)
+
+'กดปุ่ม preview ของไฟล์ multiple'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+'กดปุ่มกากกะบาทที่หน้าต่าง preview'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+'กดปุ่ม preview ของไฟล์ multiple'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+'กดปุ่มกากกะบาทที่หน้าต่าง preview'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+'-ทำเครื่องหมายกาถูกหลังรายการที่เลือก สิ้นสุดการทดสอบข้อมูล multiple วันที่ 11/10/2017-31/10/2017 โดยกด preview และกดเลือกรายการ'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+'เลือกประเภทการทำนาย เป็น all'
+WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '0', FailureHandling.STOP_ON_FAILURE)
+
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
+WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_'))
+
+'ตรวจสอบ pop up preview ของไฟล์ single'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__008'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'กดปุ่ม preview ของไฟล์ multiple'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+'กดปุ่มกากกะบาทที่หน้าต่าง preview'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+'-กดปุ่ม export สิ้นสุดการทดสอบข้อมูลทั้งหมด (All) วันที่ 11/10/2017-31/11/2017 โดยกด preview และกด export'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+'เลือกประเภทการทำนาย เป็น single'
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '1', true)
+
+'เอาเคอเซอร์ชี้ที่ไฟล์ single เพื่อดู preview'
+WebUI.mouseOver(findTestObject('Search history log/search history log/span_12'))
+
+'ตรวจสอบ pop up preview ของไฟล์ single'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__008'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล single วันที่ 11/10/2017-31/11/2017 โดยกด preview และกด export'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+'เลือกประเภทการทำนาย เป็น multiple'
+WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '2', true)
+
+'กดปุ่ม preview ของไฟล์ multiple'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+'กดปุ่มกากกะบาทที่หน้าต่าง preview'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
+
+not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
+
+'-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล multiple วันที่ 11/10/2017-31/11/2017 โดยกด preview และกด export'
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_mydpicon icon-mydpremove'))
+
+WebUI.setText(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_selection ng-valid ng-di'), 
+    '11/10/2017')
 
 WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '0', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Search history log/search history log/span_4'))
+WebUI.setText(findTestObject('Search history log/search history log/input_selection ng-valid ng-to31'), '31/10/2017')
 
-WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
-
-WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
-
-WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
-
-WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
-
-WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
-    '1', true)
-
-WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_'))
-
-WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
-
-WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
-
-WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
-    '2', true)
-
-WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
-
-WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
-
-WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
-
-WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
-
-not_run: WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
-    '0', FailureHandling.STOP_ON_FAILURE)
-
-not_run: WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_'))
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
-
-not_run: WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
-    '1', true)
-
-not_run: WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_ (1)'))
-
-not_run: WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_'))
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
-
-not_run: WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
-    '2', true)
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
-
-not_run: WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
-    '0', FailureHandling.STOP_ON_FAILURE)
-
-not_run: WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_'))
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
-
-not_run: WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
-    '1', true)
-
-not_run: WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_'))
-
-not_run: WebUI.mouseOver(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_ (1)'))
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/div_w3-padding-16'))
-
-not_run: WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
-    '2', true)
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_mydpicon icon-mydpremove'))
-
-not_run: WebUI.setText(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_selection ng-valid ng-di'), 
-    '3')
-
-not_run: WebUI.setText(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_selection ng-valid ng-di'), 
-    '11/10/2017')
-
-not_run: WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
-    'All', true)
-
-not_run: WebUI.closeBrowser()
+WebUI.closeBrowser()
 

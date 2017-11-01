@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_  (1)</name>
+   <name>span_10</name>
    <tag></tag>
-   <elementGuidId>e389e7c5-f039-4575-9a52-7d9e717ec088</elementGuidId>
-   <selectorCollection>
-      <entry>
-         <key>BASIC</key>
-         <value>//span[count(. | //*[@class = 'hover']) = count(//*[@class = 'hover'])]</value>
-      </entry>
-   </selectorCollection>
+   <elementGuidId>588caa3d-fac6-453b-b001-f0be84465cf9</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -27,16 +21,14 @@
       <value>hover</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>
-                        'บริการดี แต่รอคิวนาน'
-                      </value>
+      <value>พนักงานไม่ยิ้มแย้ม</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
