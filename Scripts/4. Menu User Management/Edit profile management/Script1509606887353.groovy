@@ -20,13 +20,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'เปิดเบราเซอร์'
+'เ�?ิดเ�?ราเ�?อร�?'
 WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
 
-'ขยายหน้าต่าง เบราเซอร์'
+'�?ยายห�?�?าต�?า�? เ�?ราเ�?อร�?'
 WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 
-'เข้าสู่ URL'
+'เ�?�?าสู�? URL'
 WebUI.navigateToUrl('192.168.11.59', FailureHandling.CONTINUE_ON_FAILURE)
 
 'login'
@@ -41,84 +41,84 @@ WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'
 'login'
 WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
 
-'คลิปเมนู User Management'
+'�?ลิ�?เม�?ู User Management'
 WebUI.click(findTestObject('Change role/Page_Guru TMDA/a_User Management'))
 
-'กรอกข้อความลงในช่องค้นหา'
+'�?รอ�?�?�?อ�?วามล�?�?�?�?�?อ�?�?�?�?หา'
 WebUI.setText(findTestObject('Change role/Page_Guru TMDA (2)/input_ng-untouched ng-valid ng'), 'fortest')
 
-'กดปุ่มแก้ไข Profile'
+'�?ด�?ุ�?ม�?�?�?�?�? Profile'
 WebUI.click(findTestObject('Edit user profile/list/i_fa fa-pencil-square-o'))
 
-'กดสัญลักษณ์ดินสอหลังชื่อ'
+'�?ดสั�?ลั�?ษณ�?ดิ�?สอหลั�?�?ื�?อ'
 WebUI.click(findTestObject('Edit user profile/Edit//i_fa fa-pencil name'))
 
-'กดสัญลักษณ์ดินสอหลังอีเมล'
+'�?ดสั�?ลั�?ษณ�?ดิ�?สอหลั�?อีเมล'
 WebUI.click(findTestObject('Edit user profile/Edit/i_fa fa-pencil email'))
 
-'ลบข้อความในกล่องข้อความ First name'
+'ล�?�?�?อ�?วาม�?�?�?ล�?อ�?�?�?อ�?วาม First name'
 WebUI.setText(findTestObject('Edit user profile/Edit//input_firstname'), 'e')
 
-'ลบข้อความในกล่องข้อความ First name'
+'ล�?�?�?อ�?วาม�?�?�?ล�?อ�?�?�?อ�?วาม First name'
 WebUI.sendKeys(findTestObject('Edit user profile/Edit//input_firstname'), Keys.chord(Keys.BACK_SPACE), FailureHandling.STOP_ON_FAILURE)
 
-'ตรวจสอบปุ่ม Submit ไม่สามารถกดได้'
+'ตรว�?สอ�?�?ุ�?ม Submit �?ม�?สามารถ�?ด�?ด�?'
 WebUI.verifyElementNotClickable(findTestObject('Edit user profile/Edit/button_SUBMIT'))
 
-'กรอกชื่อเป็นตัวเลข'
+'�?รอ�?�?ื�?อเ�?�?�?ตัวเล�?'
 WebUI.setText(findTestObject('Edit user profile/Edit//input_firstname'), '55555')
 
-'ตรวจสอบปุ่ม Submit ไม่สามารถกดได้'
+'ตรว�?สอ�?�?ุ�?ม Submit �?ม�?สามารถ�?ด�?ด�?'
 WebUI.verifyElementNotClickable(findTestObject('Edit user profile/Edit/button_SUBMIT'))
 
-'กรอกชื่อที่ถูกรูปแบบ'
+'�?รอ�?�?ื�?อที�?ถู�?รู�?�?�?�?'
 WebUI.setText(findTestObject('Edit user profile/Edit//input_firstname'), 'Piratchana')
 
-'ลบข้อความในกล่องข้อความ Last name'
+'ล�?�?�?อ�?วาม�?�?�?ล�?อ�?�?�?อ�?วาม Last name'
 WebUI.setText(findTestObject('Edit user profile/Edit//input_lastname'), 'e')
 
-'ลบข้อความในกล่องข้อความ Last name'
+'ล�?�?�?อ�?วาม�?�?�?ล�?อ�?�?�?อ�?วาม Last name'
 WebUI.sendKeys(findTestObject('Edit user profile/Edit//input_lastname'), Keys.chord(Keys.BACK_SPACE), FailureHandling.STOP_ON_FAILURE)
 
-'ตรวจสอบปุ่ม Submit ไม่สามารถกดได้'
+'ตรว�?สอ�?�?ุ�?ม Submit �?ม�?สามารถ�?ด�?ด�?'
 WebUI.verifyElementNotClickable(findTestObject('Edit user profile/Edit/button_SUBMIT'))
 
-'กรอกนามสกุลเป็นตัวเลข'
+'�?รอ�?�?ามส�?ุลเ�?�?�?ตัวเล�?'
 WebUI.setText(findTestObject('Edit user profile/Edit//input_lastname'), '55555')
 
-'ตรวจสอบปุ่ม Submit ไม่สามารถกดได้'
+'ตรว�?สอ�?�?ุ�?ม Submit �?ม�?สามารถ�?ด�?ด�?'
 WebUI.verifyElementNotClickable(findTestObject('Edit user profile/Edit/button_SUBMIT'))
 
-'กรอกนามสกุลที่ถูกรูปแบบ'
+'�?รอ�?�?ามส�?ุลที�?ถู�?รู�?�?�?�?'
 WebUI.setText(findTestObject('Edit user profile/Edit//input_lastname'), 'Maksub')
 
-'ลบข้อความในกล่องข้อความ Email'
+'ล�?�?�?อ�?วาม�?�?�?ล�?อ�?�?�?อ�?วาม Email'
 WebUI.setText(findTestObject('Edit user profile/Edit/input_email'), 'e')
 
-'ลบข้อความในกล่องข้อความ Email'
+'ล�?�?�?อ�?วาม�?�?�?ล�?อ�?�?�?อ�?วาม Email'
 WebUI.sendKeys(findTestObject('Edit user profile/Edit/input_email'), Keys.chord(Keys.BACK_SPACE), FailureHandling.STOP_ON_FAILURE)
 
-'ตรวจสอบปุ่ม Submit ไม่สามารถกดได้'
+'ตรว�?สอ�?�?ุ�?ม Submit �?ม�?สามารถ�?ด�?ด�?'
 WebUI.verifyElementNotClickable(findTestObject('Edit user profile/Edit/button_SUBMIT'))
 
-'กรอกอีเมลไม่ใส่ @ และไม่มี .co'
+'�?รอ�?อีเมล�?ม�?�?ส�? @ �?ละ�?ม�?มี .co'
 WebUI.setText(findTestObject('Edit user profile/Edit/input_email'), 'Cremecreme')
 
-'ตรวจสอบปุ่ม Submit ไม่สามารถกดได้'
+'ตรว�?สอ�?�?ุ�?ม Submit �?ม�?สามารถ�?ด�?ด�?'
 WebUI.verifyElementNotClickable(findTestObject('Edit user profile/Edit/button_SUBMIT'))
 
-'กรอกอีเมลที่ถูกรูปแบบ'
+'�?รอ�?อีเมลที�?ถู�?รู�?�?�?�?'
 WebUI.setText(findTestObject('Edit user profile/Edit/input_email'), 'Creme@mail.com')
 
-'กดปุ่ม Submit'
+'�?ด�?ุ�?ม Submit'
 WebUI.click(findTestObject('Edit user profile/Edit/button_SUBMIT'))
 
-'ตรวจสอบการแจ้งเตือน Edit Profile Successful'
+'ตรว�?สอ�?�?าร�?�?�?�?เตือ�? Edit Profile Successful'
 WebUI.verifyElementPresent(findTestObject('Edit user profile/Edit/div_Edit Profile Successful.'), 2, FailureHandling.CONTINUE_ON_FAILURE)
 
-'กดปุ่มปิดการแจ้งเตือน'
+'�?ด�?ุ�?ม�?ิด�?าร�?�?�?�?เตือ�?'
 WebUI.click(findTestObject('Edit user profile/Edit/button_'))
 
-'ปิดเบราเซอร์'
+'�?ิดเ�?ราเ�?อร�?'
 WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
 
