@@ -19,19 +19,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-not_run: WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.navigateToUrl('192.168.11.59', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.navigateToUrl('192.168.11.59', FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.click(findTestObject('Page_Guru TMDA/span_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Guru TMDA/span_Login'), FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.click(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
 
 'กดปุ่ม Predict'
 WebUI.click(findTestObject('Page single/Page_Guru TMDA/button_btn btn-link'), FailureHandling.CONTINUE_ON_FAILURE)
@@ -51,5 +51,5 @@ WebUI.verifyElementPresent(findTestObject('Page_Guru TMDA (2)/div_row'), 20, Fai
 'ตรวจสอบผลลัพธ์ Predict บรรทัดที่ 2'
 WebUI.verifyElementPresent(findTestObject('Page_Guru TMDA (2)/div_predict-result'), 20, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
 
