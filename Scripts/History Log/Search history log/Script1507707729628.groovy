@@ -28,9 +28,9 @@ WebUI.navigateToUrl('192.168.11.59')
 
 WebUI.click(findTestObject('Page_Guru TMDA/span_Login'))
 
-WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'), 'piew')
+WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'), 'creme')
 
-WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), 'piew')
+WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), '1234')
 
 '-สิ้นสุดการทดสอบ login\r\n'
 WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'))
@@ -56,6 +56,12 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 '-กดปุ่ม export สิ้นสุดการทดสอบข้อมูลทั้งหมด (All) วันปัจจุบัน โดยกด preview กดเลือกรายการ  และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/td_Survey Single'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//td_Survey Multiple'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
 'เลือกประเภทการทำนาย เป็น single'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '1', true)
@@ -64,7 +70,7 @@ WebUI.selectOptionByValue(findTestObject('Search history log/search history log/
 WebUI.mouseOver(findTestObject('Search history log/search history log//span_3'))
 
 'ตรวจสอบ pop up preview ของไฟล์ single'
-WebUI.verifyElementPresent(findTestObject('Search history log/search history log//div_ngxp__container ngxp__anim003'), 5, 
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/div_ngxp__container ngxp__anim003'), 5, 
     FailureHandling.CONTINUE_ON_FAILURE)
 
 'ทำเครื่องหมายกากถูกหลังรายการที่เลือก'
@@ -72,6 +78,9 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 
 '-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล single วันปัจจุบัน โดยกด preview กดเลือกรายการ  และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/td_Survey Single'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 'เลือกประเภทการทำนาย เป็น multiple'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
@@ -88,6 +97,9 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 
 '-กดป่ม export สิ้นสุดการทดสอบข้อมูล multiple วันปัจจุบัน โดยกด preview กดเลือกรายการ  และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//td_Survey Multiple'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 'เลือกประเภทการทำนายเป็น all'
 WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
@@ -109,6 +121,12 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 '-ทำเครื่องหมายกากถูกหลังรายการที่เลือก สิ้นสุดการทดสอบข้อมูลทั้งหมด (All) วันปัจจุบัน โดยกด preview และกดเลือกรายการ'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
 
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/td_Survey Single'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//td_Survey Multiple'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
 'เลือกประเภทการทำนาย เป็น single'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '1', true)
@@ -123,6 +141,9 @@ WebUI.verifyElementPresent(findTestObject('Search history log/search history log
 '-ทำเครื่องหมายกากถูกหลังรายการที่เลือก สิ้นสุดการทดสอบข้อมูล single วันปัจจุบัน โดยกด preview และกดเลือกรายการ'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
 
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//td_Survey Single'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
 'เลือกประเภทการทำนาย เป็น multiple'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '2', true)
@@ -135,6 +156,9 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 
 '-ทำเครื่องหมายกากถูกหลังรายการที่เลือก สิ้นสุดการทดสอบข้อมูล multiple วันปัจจุบัน โดยกด preview และกดเลือกรายการ'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//td_Survey Multiple'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 'เลือกประเภทการทำนาย เป็น all'
 WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
@@ -155,6 +179,12 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 '-กดปุ่ม export สิ้นสุดการทดสอบข้อมูลทั้งหมด (All) วันปัจจุบัน โดยกด preview และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/td_Survey Single'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//td_Survey Multiple'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
 'เลือกประเภทการทำนาย เป็น single'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '1', true)
@@ -167,6 +197,9 @@ WebUI.verifyElementPresent(findTestObject('Search history log/search history log
 
 '-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล single วันปัจจุบัน โดยกด preview และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/td_Survey Single'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 'เลือกประเภทการทำนาย multiple'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
@@ -181,8 +214,11 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 '-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล multiple วันปัจจุบัน โดยกด preview และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//td_Survey Multiple'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
 'ใส่ข้อมูลวันที่ที่ต้องการค้นหา ใน input แรก'
-WebUI.setText(findTestObject('Search history log/search history log/input_selection ng-untouched n'), '11/10/2017')
+WebUI.setText(findTestObject('Search history log/search history log/input_selection ng-untouched n'), '02/11/2017')
 
 'เลือกประเภทการทำนาย all'
 WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
@@ -212,6 +248,12 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 '-กดปุ่ม export สิ้นสุดการทดสอบข้อมูลทั้งหมด (All) วันที่ 11/10/2017 โดยกด preview กดเลือกรายการ และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/td_Survey Single'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//td_Survey Multiple'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
 'เลือกประเภทการทำนาย เป็น single'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '1', true)
@@ -229,6 +271,9 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 '-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล single วันที่ 11/10/2017 โดยกด preview กดเลือกรายการ และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/td_Survey Single'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
 'เลือกประเภทการทำนาย เป็น multiple'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '2', true)
@@ -244,6 +289,9 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 
 '-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล multiple วันที่ 11/10/2017 โดยกด preview กดเลือกรายการ และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//td_Survey Multiple'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 'เลือกประเภทการทำนาย เป็น all'
 WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
@@ -264,6 +312,12 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 '-ทำเครื่องหมายกาถูกหลังรายการที่เลือก สิ้นสุดการทดสอบข้อมูลทั้งหมด (All) วันที่ 11/10/2017 โดยกด preview และกดเลือกรายการ'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
 
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/td_Survey Single'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//td_Survey Multiple'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
 'เลือกประเภทการทำนาย เป็น single'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '1', true)
@@ -277,6 +331,9 @@ WebUI.verifyElementPresent(findTestObject('Search history log/search history log
 '-ทำเครื่องหมายกาถูกหลังรายการที่เลือก สิ้นสุดการทดสอบข้อมูล single วันที่ 11/10/2017 โดยกด preview และกดเลือกรายการ'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
 
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/td_Survey Single'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
 'เลือกประเภทการทำนาย  เป็น multiple'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '2', true)
@@ -289,6 +346,9 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 
 '-ทำเครื่องหมายกาถูกหลังรายการที่เลือก สิ้นสุดการทดสอบข้อมูล multiple วันที่ 11/10/2017 โดยกด preview และกดเลือกรายการ'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//td_Survey Multiple'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 'เลือกประเภทการทำนาย เป็น all\r\n'
 WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
@@ -309,6 +369,12 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 '-กดปุ่ม export สิ้นสุดการทดสอบข้อมูลทั้งหมด (All) วันที่ 11/10/2017 โดยกด preview และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/td_Survey Single'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//td_Survey Multiple'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
 'เลือกประเภทการทำนาย เป็น single'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '1', true)
@@ -321,6 +387,9 @@ WebUI.verifyElementPresent(findTestObject('Search history log/search history log
 
 '-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล single วันที่ 11/10/2017 โดยกด preview และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/td_Survey Single'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 'เลือกประเภทการทำนาย เป็น multiple'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
@@ -335,8 +404,11 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 '-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล multi วันที่ 11/10/2017 โดยกด preview และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//td_Survey Multiple'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
 'ใส่ข้อมูลวันที่ ใน input หลัง'
-WebUI.setText(findTestObject('Search history log/search history log/input_selection ng-untouched n (1)'), '31/10/2017')
+WebUI.setText(findTestObject('Search history log/search history log/input_selection ng-untouched n (1)'), '02/11/2017')
 
 'เลือกประเภทการทำนาย เป็น all'
 WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
@@ -360,6 +432,12 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 '-กดปุ่ม export สิ้นสุดการทดสอบข้อมูลทั้งหมด (All) วันที่ 11/10/2017-31/11/2017 โดยกด preview กดเลือกรายการ และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/td_Survey Single'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//td_Survey Multiple'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
 'เลือกประเภทการทำนาย เป็น single'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '1', true)
@@ -376,6 +454,9 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 '-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล single วันที่ 11/10/2017-31/11/2017 โดยกด preview กดเลือกรายการ และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/td_Survey Single'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
 'เลือกประเภทการทำนาย เป็น multiple\r\n'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '2', true)
@@ -391,6 +472,9 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 
 '-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล multiple วันที่ 11/10/2017-31/11/2017 โดยกด preview กดเลือกรายการ และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
+
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//td_Survey Multiple'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 'เลือกประเภทการทำนาย เป็น all\r\n'
 WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
@@ -411,6 +495,12 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 '-ทำเครื่องหมายกาถูกหลังรายการที่เลือก สิ้นสุดการทดสอบข้อมูลทั้งหมด (All) วันที่ 11/10/2017-31/10/2017 โดยกด preview และกดเลือกรายการ'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
 
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/td_Survey Single'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//td_Survey Multiple'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
 'เลือกประเภทการทำนาย เป็น single'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '1', true)
@@ -429,6 +519,9 @@ WebUI.verifyElementPresent(findTestObject('Search history log/search history log
 
 '-ทำเครื่องหมายกาถูกหลังรายการที่เลือก สิ้นสุดการทดสอบข้อมูล single วันที่ 11/10/2017-31/10/2017 โดยกด preview และกดเลือกรายการ'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
+
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/td_Survey Single'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 'เลือกประเภทการทำนาย เป็น multiple'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
@@ -449,6 +542,9 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 '-ทำเครื่องหมายกาถูกหลังรายการที่เลือก สิ้นสุดการทดสอบข้อมูล multiple วันที่ 11/10/2017-31/10/2017 โดยกด preview และกดเลือกรายการ'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_ng-valid ng-dirty ng-tou'))
 
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//td_Survey Multiple'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
 'เลือกประเภทการทำนาย เป็น all'
 WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '0', FailureHandling.STOP_ON_FAILURE)
@@ -468,6 +564,12 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 '-กดปุ่ม export สิ้นสุดการทดสอบข้อมูลทั้งหมด (All) วันที่ 11/10/2017-31/11/2017 โดยกด preview และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/td_Survey Single'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//td_Survey Multiple'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
 'เลือกประเภทการทำนาย เป็น single'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '1', true)
@@ -481,6 +583,9 @@ WebUI.verifyElementPresent(findTestObject('Search history log/search history log
 '-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล single วันที่ 11/10/2017-31/11/2017 โดยกด preview และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log/td_Survey Single'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
 'เลือกประเภทการทำนาย เป็น multiple'
 WebUI.selectOptionByValue(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '2', true)
@@ -491,22 +596,28 @@ WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA
 'กดปุ่มกากกะบาทที่หน้าต่าง preview'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
 
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Preview'))
-
-not_run: WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/i_fa fa-times w3-xlarge w3-tex'))
-
 '-กดปุ่ม export สิ้นสุดการทดสอบข้อมูล multiple วันที่ 11/10/2017-31/11/2017 โดยกด preview และกด export'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/button_Export'))
 
+'---ตรวจสอบผล'
+WebUI.verifyElementPresent(findTestObject('Search history log/search history log//td_Survey Multiple'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'เลือกประเภทการทำนาย เป็น all'
+WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+    '0')
+
+'กดกากะบาทลบวันที่ inbox ข้างหน้า'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_mydpicon icon-mydpremove'))
 
-WebUI.setText(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_selection ng-valid ng-di'), 
-    '11/10/2017')
+'---ตรวจสอบผล'
+WebUI.verifyElementNotPresent(findTestObject('Search history log/search history log//button_Preview'), 5)
 
-WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
+not_run: WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '0', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Search history log/search history log/input_selection ng-valid ng-to31'), '31/10/2017')
+'ใส่ข้อมูลวันที่ใน inbox หลัง'
+WebUI.setText(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_selection ng-valid ng-di'), 
+    '02/11/2017')
 
 WebUI.closeBrowser()
 
