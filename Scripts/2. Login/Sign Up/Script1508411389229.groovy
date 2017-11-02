@@ -38,10 +38,14 @@ WebUI.scrollToElement(findTestObject('signup/login/a_Sign Up'), 3, FailureHandli
 'คลิกปุ่ม Sign Up'
 WebUI.click(findTestObject('signup/login/a_Sign Up'), FailureHandling.CONTINUE_ON_FAILURE)
 
-'เก็บเวลาปัจจุบันของเครื่องคอมพิวเตอร์'
-Date date = new Date("yyyyy-mm-dd")
-'เก็บเวลาปัจจุบันของเครื่องคอมพิวเตอร์'
-System.out.println('CurrentDate:'+date.toString())
+'เก็บเวลาปัจุบันของเครื่อง'
+Date date = new Date()
+
+'เก็บเวลาปัจุบันของเครื่อง'
+java.text.SimpleDateFormat df = new java.text.SimpleDateFormat()
+
+'เก็บเวลาปัจุบันของเครื่อง'
+df.applyPattern('ddmmyyyyHHmmss')
 
 'กรอก Username'
 WebUI.setText(findTestObject('signup/signup/input_username'), 'Creme', FailureHandling.STOP_ON_FAILURE)
@@ -239,7 +243,7 @@ WebUI.verifyElementPresent(findTestObject('signup/signup/Required/div_Answer is 
 WebUI.setText(findTestObject('signup/signup/input_answer'), 'Dog', FailureHandling.STOP_ON_FAILURE)
 
 'กรอก Username'
-WebUI.setText(findTestObject('signup/signup/input_username'), date.toString(), FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('signup/signup/input_username'), df.format(date), FailureHandling.STOP_ON_FAILURE)
 
 'กดปุ่ม Sign Up'
 WebUI.click(findTestObject('signup/signup/button_Sign Up'), FailureHandling.STOP_ON_FAILURE)
