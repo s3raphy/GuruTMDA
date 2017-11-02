@@ -125,5 +125,5 @@ WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'))
 'ตรวจสอบเมนูปรากฎหลังเข้าสู่ระบบเสร็จสิ้น'
 WebUI.verifyElementPresent(findTestObject('reset password//a_Help (1)'), 5)
 
-not_run: WebUI.closeBrowser()
+WebUI.closeBrowser()
 
