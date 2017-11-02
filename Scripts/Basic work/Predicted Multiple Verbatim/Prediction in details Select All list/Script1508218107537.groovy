@@ -19,49 +19,48 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-not_run: WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.navigateToUrl('http://192.168.11.59/', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.navigateToUrl('http://192.168.11.59/', FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.click(findTestObject('Page_Guru TMDA (3)/span_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Guru TMDA (3)/span_Login'), FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.setText(findTestObject('Page_Guru TMDA (4)/input_ng-untouched ng-valid ng'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('Page_Guru TMDA (4)/input_ng-untouched ng-valid ng'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.click(findTestObject('Page_Guru TMDA (4)/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Guru TMDA (4)/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.click(findTestObject('Page_Guru TMDA (3)/a_Text Prediction'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Guru TMDA (3)/a_Text Prediction'), FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.click(findTestObject('Page_Guru TMDA (3)/a_Upload File'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Guru TMDA (3)/a_Upload File'), FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.uploadFile(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (4)/input_upfile'), 'C:\\test-Copy.xlsx', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.uploadFile(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (4)/input_upfile'), 'C:\\test-Copy.xlsx', FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.waitForElementClickable(findTestObject('Page_Guru TMDA (5)/button_Upload'), 30, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementClickable(findTestObject('Page_Guru TMDA (5)/button_Upload'), 30, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.click(findTestObject('Page_Guru TMDA (5)/button_Upload'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Guru TMDA (5)/button_Upload'), FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.waitForElementNotPresent(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (5)/Page_Guru TMDA/div_progress-bar-zone'), 
+WebUI.waitForElementNotPresent(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (5)/Page_Guru TMDA/div_progress-bar-zone'), 
     5, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.selectOptionByValue(findTestObject('Page_Guru TMDA (5)/select_sheet'), '1: withLabel', true, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.selectOptionByValue(findTestObject('Page_Guru TMDA (5)/select_sheet'), '1: withLabel', true, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.check(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (1)/div_w3-padding-32 w3-center'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.check(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (1)/div_w3-padding-32 w3-center'), FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.click(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (3)/button_'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (3)/button_'), FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.waitForElementNotPresent(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (1)/div_w3-padding-32 w3-center'), 
-    5, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementNotPresent(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (1)/div_w3-padding-32 w3-center'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.check(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (2)/i_fa fa-check w3-text-green'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.check(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (2)/i_fa fa-check w3-text-green'), FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.scrollToElement(findTestObject('Page_Guru TMDA (16)/button_Start'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.scrollToElement(findTestObject('Page_Guru TMDA (16)/button_Start'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.click(findTestObject('Page_Guru TMDA (5)/button_Start'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Guru TMDA (5)/button_Start'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Display Accessibility list/Page_Guru TMDA (2)/div_row'), 3, FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
 

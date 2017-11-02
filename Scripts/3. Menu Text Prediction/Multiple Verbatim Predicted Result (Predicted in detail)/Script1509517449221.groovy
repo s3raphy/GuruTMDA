@@ -57,7 +57,7 @@ WebUI.waitForElementNotPresent(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA
     5, FailureHandling.STOP_ON_FAILURE)
 
 'กดปุ่มปิดการแจ้งเตือนกรณี API ผิดพลาด'
-WebUI.click(findTestObject('Upload file without Labeling/Uploading/button_ (1)'), FailureHandling.OPTIONAL)
+not_run: WebUI.click(findTestObject('Upload file without Labeling/Uploading/button_ (1)'), FailureHandling.OPTIONAL)
 
 'เลือกประเภท Sheet'
 WebUI.selectOptionByIndex(findTestObject('Page_Guru TMDA (5)/select_sheet'), '1')
@@ -86,16 +86,70 @@ WebUI.click(findTestObject('Page_Guru TMDA (5)/button_Start'), FailureHandling.S
 'รอจนกว่าการโหลดเสร็จสิ้น'
 WebUI.waitForElementNotPresent(findTestObject('Upload file without Labeling/div_loader'), 60, FailureHandling.STOP_ON_FAILURE)
 
+'รอ Select All ปรากฎ'
+WebUI.waitForElementPresent(findTestObject('Display select all list/Page_Guru TMDA (2)/label_Select All'), 7)
+
 'Un-Check  Select all'
-WebUI.click(findTestObject('Display select all list/Page_Guru TMDA (2)/label_Select All'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Display select all list/Page_Guru TMDA (2)/label_Select All'), FailureHandling.STOP_ON_FAILURE)
 
 'ตรวจสอบแสดงรายการ Predict ไม่แสดง'
-WebUI.verifyElementNotPresent(findTestObject('Upload file without Labeling/list/div_row'), 5, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementNotPresent(findTestObject('Upload file without Labeling/list/div_row'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Predicted in details/Button_Export'))
+'กดปุ่ม Export'
+WebUI.click(findTestObject('Predicted in details/Button_Export'), FailureHandling.STOP_ON_FAILURE)
 
-'Un-Check  Select all'
-WebUI.click(findTestObject('Display select all list/Page_Guru TMDA (2)/label_Select All'), FailureHandling.CONTINUE_ON_FAILURE)
+'Check  Select all'
+WebUI.click(findTestObject('Display select all list/Page_Guru TMDA (2)/label_Select All'), FailureHandling.STOP_ON_FAILURE)
+
+'ตรวจสอบแสดง Accessibility'
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result//span_Accessibility'), 
+    5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'กดปุ่มรายการข้อความถัดไป'
+WebUI.click(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result//a_page-link'))
+
+'ตรวจสอบแสดง Private Reason'
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result//span_Private Reason'), 
+    5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'ตรวจสอบแสดง Company Brand'
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result//span_Company Brand'), 
+    5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'ตรวจสอบแสดง Process'
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result//span_Process'), 
+    5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'กดปุ่มรายการข้อความถัดไป'
+WebUI.click(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result//a_page-link'))
+
+'ตรวจสอบแสดง Product Feature'
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result//span_Product Feature'), 
+    5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'ตรวจสอบแสดง Timing'
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result//span_Timing'), 
+    5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'กดปุ่มรายการข้อความถัดไป'
+WebUI.click(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result//a_page-link'))
+
+'กดปุ่มรายการข้อความถัดไป'
+WebUI.click(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result//a_page-link'))
+
+'ตรวจสอบแสดง Staff Quality'
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result//span_Staff Quality'), 
+    5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'กดปุ่มรายการข้อความถัดไป'
+WebUI.click(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result//a_page-link'))
+
+'ตรวจสอบแสดง Competitors'
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/span_Competitors'), 
+    5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'กดปุ่ม Export'
+WebUI.click(findTestObject('Predicted in details/Button_Export'), FailureHandling.STOP_ON_FAILURE)
 
 'ปิดเบราเซอร์'
 WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
