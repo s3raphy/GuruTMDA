@@ -606,7 +606,7 @@ WebUI.verifyElementPresent(findTestObject('Search history log/search history log
 WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '0')
 
-'กดกากะบาทลบวันที่ inbox ข้างหน้า'
+'กดกากะบาทลบวันที่ input ข้างหน้า'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/span_mydpicon icon-mydpremove'))
 
 '---ตรวจสอบผล'
@@ -615,7 +615,7 @@ WebUI.verifyElementNotPresent(findTestObject('Search history log/search history 
 not_run: WebUI.selectOptionByIndex(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/select_serach_type'), 
     '0', FailureHandling.STOP_ON_FAILURE)
 
-'ใส่ข้อมูลวันที่ใน inbox หลัง'
+'ใส่ข้อมูลวันที่ใน input หลัง'
 WebUI.setText(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/input_selection ng-valid ng-di'), 
     '02/11/2017')
 
