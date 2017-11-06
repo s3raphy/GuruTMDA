@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_excel-reader</name>
+   <name>button_Upload (1)</name>
    <tag></tag>
-   <elementGuidId>39b6a0ed-03af-40e2-8a8d-188e0d814621</elementGuidId>
+   <elementGuidId>85419b2e-27ae-4bf6-8a3e-314243fd0aac</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div</value>
+         <value>//button[count(. | //*[@class = 'btn btn-block w3-large w3-text-white']) = count(//*[@class = 'btn btn-block w3-large w3-text-white'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,20 +17,27 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-block w3-large w3-text-white</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>contains</matchCondition>
-      <name>class</name>
+      <name>text</name>
       <type>Main</type>
-      <value>excel-reader</value>
+      <value>Upload</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[1]/my-app[1]/app-multiple-verbatim[1]/div[@class=&quot;popup-zone&quot;]/div[@class=&quot;excel-reader&quot;]</value>
+      <value>id(&quot;main-content&quot;)/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3&quot;]/div[@class=&quot;btn-upload&quot;]/button[@class=&quot;btn btn-block w3-large w3-text-white&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

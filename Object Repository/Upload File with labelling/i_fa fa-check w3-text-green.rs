@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_excel-reader</name>
+   <name>i_fa fa-check w3-text-green</name>
    <tag></tag>
-   <elementGuidId>39b6a0ed-03af-40e2-8a8d-188e0d814621</elementGuidId>
-   <selectorCollection>
-      <entry>
-         <key>BASIC</key>
-         <value>//div</value>
-      </entry>
-   </selectorCollection>
+   <elementGuidId>82a58475-a97d-493b-ad4a-f4d0ba3e8cd8</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -17,20 +11,20 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
+      <value>i</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>contains</matchCondition>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>excel-reader</value>
+      <value>fa fa-check w3-text-green</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[1]/my-app[1]/app-multiple-verbatim[1]/div[@class=&quot;popup-zone&quot;]/div[@class=&quot;excel-reader&quot;]</value>
+      <value>id(&quot;conference-timeline&quot;)/div[@class=&quot;conference-timeline-content&quot;]/div[@class=&quot;timeline-article&quot;]/div[@class=&quot;content-right-container&quot;]/div[@class=&quot;content-right w3-large&quot;]/i[@class=&quot;fa fa-check w3-text-green&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

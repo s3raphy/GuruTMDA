@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_excel-reader</name>
+   <name>div_loader</name>
    <tag></tag>
-   <elementGuidId>39b6a0ed-03af-40e2-8a8d-188e0d814621</elementGuidId>
-   <selectorCollection>
-      <entry>
-         <key>BASIC</key>
-         <value>//div</value>
-      </entry>
-   </selectorCollection>
+   <elementGuidId>4fe9aa7b-f0d9-4526-8690-7ee200c91402</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -20,17 +14,17 @@
       <value>div</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>contains</matchCondition>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>excel-reader</value>
+      <value>loader</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[1]/my-app[1]/app-multiple-verbatim[1]/div[@class=&quot;popup-zone&quot;]/div[@class=&quot;excel-reader&quot;]</value>
+      <value>/html[1]/body[1]/my-app[1]/app-predicted-results[1]/div[@class=&quot;container-fluid&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-6 col-sm-offset-3&quot;]/div[@class=&quot;loader&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

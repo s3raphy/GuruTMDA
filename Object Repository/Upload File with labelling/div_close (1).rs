@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_excel-reader</name>
+   <name>div_close (1)</name>
    <tag></tag>
-   <elementGuidId>39b6a0ed-03af-40e2-8a8d-188e0d814621</elementGuidId>
+   <elementGuidId>1b53d63b-7fcf-469b-8f22-357e64150684</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div</value>
+         <value>//div[count(. | //*[@id = 'close']) = count(//*[@id = 'close'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,17 +20,17 @@
       <value>div</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>contains</matchCondition>
-      <name>class</name>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
       <type>Main</type>
-      <value>excel-reader</value>
+      <value>close</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[1]/my-app[1]/app-multiple-verbatim[1]/div[@class=&quot;popup-zone&quot;]/div[@class=&quot;excel-reader&quot;]</value>
+      <value>id(&quot;close&quot;)</value>
    </webElementProperties>
 </WebElementEntity>

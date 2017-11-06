@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_excel-reader</name>
+   <name>a_</name>
    <tag></tag>
-   <elementGuidId>39b6a0ed-03af-40e2-8a8d-188e0d814621</elementGuidId>
+   <elementGuidId>125da63b-2eb0-4801-9712-6beb6e4c9831</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div</value>
+         <value>//a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,20 +17,27 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
+      <value>a</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
-      <matchCondition>contains</matchCondition>
-      <name>class</name>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
       <type>Main</type>
-      <value>excel-reader</value>
+      <value>/help</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>ดูตัวอย่างไฟล์เพิ่มเติม</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[1]/my-app[1]/app-multiple-verbatim[1]/div[@class=&quot;popup-zone&quot;]/div[@class=&quot;excel-reader&quot;]</value>
+      <value>id(&quot;swal2-content&quot;)/div[@class=&quot;w3-white&quot;]/div[@class=&quot;text-right w3-medium w3-padding th-sarabun-font&quot;]/a[1]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -112,7 +112,7 @@ WebUI.waitForElementNotPresent(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA
     5, FailureHandling.STOP_ON_FAILURE)
 
 'กดปุ่มปิดการแจ้งเตือนกรณี API ผิดพลาด'
-WebUI.click(findTestObject('Upload file without Labeling/Uploading/button_ (1)'), FailureHandling.OPTIONAL)
+not_run: WebUI.click(findTestObject('Upload file without Labeling/Uploading/button_ (1)'), FailureHandling.OPTIONAL)
 
 'เลือกประเภท Sheet'
 WebUI.selectOptionByIndex(findTestObject('Page_Guru TMDA (5)/select_sheet'), '1')
@@ -141,7 +141,7 @@ WebUI.waitForElementNotPresent(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA
     5, FailureHandling.STOP_ON_FAILURE)
 
 'กดปุ่มปิดการแจ้งเตือนกรณี API ผิดพลาด'
-WebUI.click(findTestObject('Upload file without Labeling/Uploading/button_ (1)'), FailureHandling.OPTIONAL)
+not_run: WebUI.click(findTestObject('Upload file without Labeling/Uploading/button_ (1)'), FailureHandling.OPTIONAL)
 
 'เลือกประเภท Sheet'
 WebUI.selectOptionByIndex(findTestObject('Page_Guru TMDA (5)/select_sheet'), '1')
