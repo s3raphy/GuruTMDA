@@ -62,7 +62,7 @@ WebUI.click(findTestObject('Page_Guru TMDA (5)/button_Start'), FailureHandling.C
 
 WebUI.click(findTestObject('Display select all list/Page_Guru TMDA (2)/label_Select All'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.check(findTestObject('Display Accessibility list/Page_Guru TMDA (3)/label_Accessibility'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.check(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/label_Accessibility'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Display Accessibility list/Page_Guru TMDA (2)/div_row'), 3, FailureHandling.CONTINUE_ON_FAILURE)
 
