@@ -109,10 +109,6 @@ WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multipl
 'กดปุ่มรายการข้อความถัดไป'
 WebUI.click(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result//a_page-link'))
 
-'ตรวจสอบแสดง Private Reason'
-WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result//span_Private Reason'), 
-    5, FailureHandling.CONTINUE_ON_FAILURE)
-
 'ตรวจสอบแสดง Company Brand'
 WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result//span_Company Brand'), 
     5, FailureHandling.CONTINUE_ON_FAILURE)
@@ -126,10 +122,6 @@ WebUI.click(findTestObject('Predicted in details/Show All Multiple Verbatim Pred
 
 'ตรวจสอบแสดง Product Feature'
 WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result//span_Product Feature'), 
-    5, FailureHandling.CONTINUE_ON_FAILURE)
-
-'ตรวจสอบแสดง Timing'
-WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result//span_Timing'), 
     5, FailureHandling.CONTINUE_ON_FAILURE)
 
 'กดปุ่มรายการข้อความถัดไป'
@@ -146,7 +138,17 @@ WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multipl
 WebUI.click(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result//a_page-link'))
 
 'ตรวจสอบแสดง Competitors'
-WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/span_Competitors'), 
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/span_Competitors (1)'), 
+    5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'ตรวจสอบแสดง Timing'
+WebUI.verifyElementPresent(findTestObject('Predicted in details/span_Timing'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'กดปุ่มรายการข้อความถัดไป'
+WebUI.click(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result//a_page-link'))
+
+'ตรวจสอบแสดง Private Reason'
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/span_Private Reason (1)'), 
     5, FailureHandling.CONTINUE_ON_FAILURE)
 
 'กดปุ่ม Export'
@@ -267,15 +269,15 @@ WebUI.click(findTestObject('Predicted in details/Show All Multiple Verbatim Pred
     FailureHandling.STOP_ON_FAILURE)
 
 'ตรวจสอบแสดง Advertising'
-WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Company Brand//span_Advertising'), 
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Company Brand//span_Advertising (1)'), 
     5, FailureHandling.CONTINUE_ON_FAILURE)
 
 'ตรวจสอบแสดง Loyalty'
-WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Company Brand//span_Loyalty'), 
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Company Brand//span_Loyalty (1)'), 
     5, FailureHandling.CONTINUE_ON_FAILURE)
 
-'ตรวจสอบแสดง facility'
-not_run: WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Accessibility/span_Facility (1)'), 
+'ตรวจสอบแสดง Credibility'
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Company Brand/span_Credibility'), 
     5, FailureHandling.CONTINUE_ON_FAILURE)
 
 'กดปุ่ม Export'
@@ -389,42 +391,42 @@ WebUI.click(findTestObject('Predicted in details/Show All Multiple Verbatim Pred
 WebUI.click(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature//label_Product Feature'), 
     FailureHandling.STOP_ON_FAILURE)
 
+'ตรวจสอบแสดง Dispute'
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature/001/span_Dispute'), 
+    5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'ตรวจสอบแสดง Ease of Use'
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature/001/span_Ease of Use'), 
+    5, FailureHandling.CONTINUE_ON_FAILURE)
+
 'ตรวจสอบแสดง Privilege'
-WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature//span_Privilege'), 
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature/001/span_Privilege'), 
     5, FailureHandling.CONTINUE_ON_FAILURE)
 
 'ตรวจสอบแสดง Promotion'
-WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature//span_Promotion'), 
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature/001/span_Promotion'), 
     5, FailureHandling.CONTINUE_ON_FAILURE)
 
-'ตรวจสอบแสดง Variability '
-WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature//span_Variability'), 
-    5, FailureHandling.CONTINUE_ON_FAILURE)
-
-'ตรวจสอบแสดง Incident'
-WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature//span_Incident'), 
-    5, FailureHandling.CONTINUE_ON_FAILURE)
-
-'ตรวจสอบแสดง Performance'
-WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature//span_Performance'), 
+'ตรวจสอบแสดง Variability  '
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature/001/span_Variability'), 
     5, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature/a_page-link'))
 
-'ตรวจสอบแสดง Fee'
-WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature//span_Fee'), 
+'ตรวจสอบแสดง Incident '
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature/001/span_Incident'), 
     5, FailureHandling.CONTINUE_ON_FAILURE)
 
-'ตรวจสอบแสดง Policy'
-WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature//span_Policy'), 
+'ตรวจสอบแสดง Performance '
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature/001/span_Performance'), 
     5, FailureHandling.CONTINUE_ON_FAILURE)
 
-'ตรวจสอบแสดง Competitors'
-WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature//span_Competitors'), 
+'ตรวจสอบแสดง Fee '
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature/001/span_Fee'), 
     5, FailureHandling.CONTINUE_ON_FAILURE)
 
-'ตรวจสอบแสดง Dispute'
-WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature//span_Dispute'), 
+'ตรวจสอบแสดง Policy '
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature/001/span_Policy'), 
     5, FailureHandling.CONTINUE_ON_FAILURE)
 
 'กดปุ่ม Export'
@@ -471,7 +473,7 @@ WebUI.click(findTestObject('Predicted in details/Show All Multiple Verbatim Pred
     FailureHandling.STOP_ON_FAILURE)
 
 'ตรวจสอบแสดง Ease of Use'
-not_run: WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature//span_Privilege (1)'), 
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Prodyct Feature/span_Ease of Use'), 
     5, FailureHandling.CONTINUE_ON_FAILURE)
 
 'กดปุ่ม Export'
@@ -592,11 +594,13 @@ WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multipl
     5, FailureHandling.CONTINUE_ON_FAILURE)
 
 'ตรวจสอบแสดง Ethic'
-not_run: WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Staff Quality//label_Force Sale'), 
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Staff Quality/span_Ethic'), 
     5, FailureHandling.CONTINUE_ON_FAILURE)
 
+WebUI.click(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Staff Quality/a_page-link'))
+
 'ตรวจสอบแสดง Staff Appearance\r\n'
-WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Staff Quality//span_Staff Appearance'), 
+WebUI.verifyElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/Staff Quality//span_Staff Appearance (1)'), 
     5, FailureHandling.CONTINUE_ON_FAILURE)
 
 'กดปุ่ม Export'
@@ -818,5 +822,5 @@ WebUI.verifyElementPresent(findTestObject('Predicted in details/Multiple Predict
 WebUI.click(findTestObject('Predicted in details/Multiple Prediction By SAI/button_Export10'))
 
 'ปิดเบราเซอร์'
-not_run: WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
+WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
 
