@@ -47,7 +47,7 @@ WebUI.click(findTestObject('Page_Guru TMDA (3)/a_Text Prediction'), FailureHandl
 WebUI.click(findTestObject('Page_Guru TMDA (3)/a_Upload File'), FailureHandling.STOP_ON_FAILURE)
 
 'เลือกไฟล์ Excel'
-WebUI.uploadFile(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (4)/input_upfile'), 'C:\\test-Copy.xlsx', FailureHandling.STOP_ON_FAILURE)
+WebUI.uploadFile(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (4)/input_upfile'), 'C:\\test.xlsx', FailureHandling.STOP_ON_FAILURE)
 
 'กดปุ่ม Upload'
 WebUI.click(findTestObject('Page_Guru TMDA (5)/button_Upload'), FailureHandling.STOP_ON_FAILURE)
