@@ -29,6 +29,7 @@ WebUI.click(findTestObject('Page_Guru TMDA/span_Login'), FailureHandling.CONTINU
 
 WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
 
+'login'
 WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
@@ -50,6 +51,18 @@ WebUI.verifyElementPresent(findTestObject('Page_Guru TMDA (2)/div_row'), 20, Fai
 
 'ตรวจสอบผลลัพธ์ Predict บรรทัดที่ 2'
 WebUI.verifyElementPresent(findTestObject('Page_Guru TMDA (2)/div_predict-result'), 20, FailureHandling.CONTINUE_ON_FAILURE)
+
+'กรอกข้อความ Predict'
+WebUI.setText(findTestObject('Page_Guru TMDA (2)/input_input-text w3-large inpu'), 'โคยยยยย', FailureHandling.CONTINUE_ON_FAILURE)
+
+'กดปุ่ม predict'
+WebUI.click(findTestObject('single verbatim with login//button_btn btn-link'))
+
+'ตรวจสอบผลลัพธ์ Predict บรรทัดที่ 2'
+WebUI.verifyElementPresent(findTestObject('Page_Guru TMDA (2)/div_predict-result'), 20, FailureHandling.CONTINUE_ON_FAILURE)
+
+'ตรวจสอบผลลัพธ์ critical'
+WebUI.verifyElementPresent(findTestObject('single verbatim with login/img'), 20, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
 
