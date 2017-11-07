@@ -21,25 +21,25 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'เปิดเบราเซอร์'
-WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
 
 'ขยายหน้าต่าง เบราเซอร์'
-WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 
 'เข้าสู่ URL'
-WebUI.navigateToUrl('192.168.11.59', FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.navigateToUrl('192.168.11.59', FailureHandling.CONTINUE_ON_FAILURE)
 
 'login'
-WebUI.click(findTestObject('Page_Guru TMDA/span_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Page_Guru TMDA/span_Login'), FailureHandling.CONTINUE_ON_FAILURE)
 
 'login'
-WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
 
 'login'
-WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
 
 'login'
-WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
 
 'คลิกเมนู UserManagement'
 WebUI.click(findTestObject('Chage status/Page_Guru TMDA/a_User Management'), FailureHandling.CONTINUE_ON_FAILURE)
@@ -57,5 +57,5 @@ WebUI.setText(findTestObject('Search user list/Page_Guru TMDA (2)/input_ng-untou
 WebUI.verifyElementPresent(findTestObject('Search user list/td_Creme'), 2, FailureHandling.CONTINUE_ON_FAILURE)
 
 'ปิดเบราเซอร์'
-WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
 

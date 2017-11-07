@@ -21,13 +21,13 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'เปิดเบราเซอร์'
-WebUI.openBrowser('', FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.openBrowser('', FailureHandling.STOP_ON_FAILURE)
 
 'ขยายหน้าต่างเบราเซอร์'
-WebUI.maximizeWindow(FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.maximizeWindow(FailureHandling.STOP_ON_FAILURE)
 
 'เข้าสู่ URL'
-WebUI.navigateToUrl('192.168.11.59', FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.navigateToUrl('192.168.11.59', FailureHandling.STOP_ON_FAILURE)
 
 'กดปุ่ม login'
 WebUI.click(findTestObject('Page_Guru TMDA/span_Login'), FailureHandling.STOP_ON_FAILURE)
@@ -96,5 +96,5 @@ WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.
 WebUI.verifyElementPresent(findTestObject('Page_Guru TMDA (7)/a_Help'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 'ปิดเบราเซอร์'
-WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
 

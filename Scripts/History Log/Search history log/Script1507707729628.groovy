@@ -20,20 +20,20 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+not_run: WebUI.openBrowser('')
 
-WebUI.maximizeWindow()
+not_run: WebUI.maximizeWindow()
 
-WebUI.navigateToUrl('192.168.11.59')
+not_run: WebUI.navigateToUrl('192.168.11.59')
 
-WebUI.click(findTestObject('Page_Guru TMDA/span_Login'))
+not_run: WebUI.click(findTestObject('Page_Guru TMDA/span_Login'))
 
-WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'), 'creme')
+not_run: WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'), 'creme')
 
-WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), '1234')
+not_run: WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), '1234')
 
 '-สิ้นสุดการทดสอบ login\r\n'
-WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'))
+not_run: WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'))
 
 'กดปุ่ม Log'
 WebUI.click(findTestObject('Search history log/search history log/Page_Guru TMDA (1)/a_Log'))

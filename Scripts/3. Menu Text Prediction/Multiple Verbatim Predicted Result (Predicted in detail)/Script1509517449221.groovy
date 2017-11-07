@@ -20,71 +20,75 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 'เปิดเบราเซอร์'
-WebUI.openBrowser('', FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.openBrowser('', FailureHandling.STOP_ON_FAILURE)
 
 'ขยายหน้าต่างเบราเซอร์'
-WebUI.maximizeWindow(FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.maximizeWindow(FailureHandling.STOP_ON_FAILURE)
 
 'เข้าสู่ URL'
-WebUI.navigateToUrl('http://192.168.11.59/', FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.navigateToUrl('http://192.168.11.59/', FailureHandling.STOP_ON_FAILURE)
 
 'กดปุ่ม Login'
-WebUI.click(findTestObject('Page_Guru TMDA (3)/span_Login'), FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Page_Guru TMDA (3)/span_Login'), FailureHandling.STOP_ON_FAILURE)
 
 'กรอก Username'
-WebUI.setText(findTestObject('Page_Guru TMDA (4)/input_ng-untouched ng-valid ng'), 'piew', FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.setText(findTestObject('Page_Guru TMDA (4)/input_ng-untouched ng-valid ng'), 'piew', FailureHandling.STOP_ON_FAILURE)
 
 'กรอกรหัสผ่าน'
-WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), 'piew', FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), 'piew', FailureHandling.STOP_ON_FAILURE)
 
 'กดปุ่ม Login'
-WebUI.click(findTestObject('Page_Guru TMDA (4)/button_Login'), FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Page_Guru TMDA (4)/button_Login'), FailureHandling.STOP_ON_FAILURE)
 
 'คลิกเมนู Text Prediction'
-WebUI.click(findTestObject('Page_Guru TMDA (3)/a_Text Prediction'), FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Page_Guru TMDA (3)/a_Text Prediction'), FailureHandling.STOP_ON_FAILURE)
 
 'เลือก Upload file'
-WebUI.click(findTestObject('Page_Guru TMDA (3)/a_Upload File'), FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Page_Guru TMDA (3)/a_Upload File'), FailureHandling.STOP_ON_FAILURE)
 
 'เลือกไฟล์ Excel'
-WebUI.uploadFile(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (4)/input_upfile'), 'C:\\test.xlsx', FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.uploadFile(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (4)/input_upfile'), 'C:\\test.xlsx', FailureHandling.STOP_ON_FAILURE)
 
 'กดปุ่ม Upload'
-WebUI.click(findTestObject('Page_Guru TMDA (5)/button_Upload'), FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Page_Guru TMDA (5)/button_Upload'), FailureHandling.STOP_ON_FAILURE)
 
 'รอให้แถบดำเนินการหายไป'
-WebUI.waitForElementNotPresent(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (5)/Page_Guru TMDA/div_progress-bar-zone'), 
+not_run: WebUI.waitForElementNotPresent(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (5)/Page_Guru TMDA/div_progress-bar-zone'), 
     5, FailureHandling.STOP_ON_FAILURE)
 
 'กดปุ่มปิดการแจ้งเตือนกรณี API ผิดพลาด'
 not_run: WebUI.click(findTestObject('Upload file without Labeling/Uploading/button_ (1)'), FailureHandling.OPTIONAL)
 
 'เลือกประเภท Sheet'
-WebUI.selectOptionByIndex(findTestObject('Page_Guru TMDA (5)/select_sheet'), '1')
+not_run: WebUI.selectOptionByIndex(findTestObject('Page_Guru TMDA (5)/select_sheet'), '1')
 
 'รอให้การแจ้งเตือนปรากฎขึ้นมา'
-WebUI.waitForElementPresent(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (1)/div_w3-padding-32 w3-center'), 10, FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.waitForElementPresent(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (1)/div_w3-padding-32 w3-center'), 
+    10, FailureHandling.STOP_ON_FAILURE)
 
 'ตรวจสอบการแจ้งเตือน Your file is verified'
-WebUI.verifyElementPresent(findTestObject('Upload file without Labeling/Uploading/div_Your file is verified.'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.verifyElementPresent(findTestObject('Upload file without Labeling/Uploading/div_Your file is verified.'), 
+    5, FailureHandling.CONTINUE_ON_FAILURE)
 
 'กดปุ่มปิดการแจ้งเตือน'
-WebUI.click(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (3)/button_'), FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (3)/button_'), FailureHandling.STOP_ON_FAILURE)
 
 'รอให้การแจ้งเตือนหายไป'
-WebUI.waitForElementNotPresent(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (1)/div_w3-padding-32 w3-center'), 5, FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.waitForElementNotPresent(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (1)/div_w3-padding-32 w3-center'), 
+    5, FailureHandling.STOP_ON_FAILURE)
 
 'มีสัญลักษณ์เครื่องหมายถูกต้องสีเขียว'
-WebUI.waitForElementPresent(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (2)/i_fa fa-check w3-text-green'), 10, FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.waitForElementPresent(findTestObject('Page_Guru TMDA (6)/Page_Guru TMDA (2)/i_fa fa-check w3-text-green'), 
+    10, FailureHandling.STOP_ON_FAILURE)
 
 'เลือกหน้าต่างมายังปุ่ม Start'
-WebUI.scrollToElement(findTestObject('Page_Guru TMDA (16)/button_Start'), 2, FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.scrollToElement(findTestObject('Page_Guru TMDA (16)/button_Start'), 2, FailureHandling.STOP_ON_FAILURE)
 
 'กดปุ่ม Start'
-WebUI.click(findTestObject('Page_Guru TMDA (5)/button_Start'), FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Page_Guru TMDA (5)/button_Start'), FailureHandling.STOP_ON_FAILURE)
 
 'รอจนกว่าการโหลดเสร็จสิ้น'
-WebUI.waitForElementNotPresent(findTestObject('Upload file without Labeling/div_loader'), 60, FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.waitForElementNotPresent(findTestObject('Upload file without Labeling/div_loader'), 60, FailureHandling.STOP_ON_FAILURE)
 
 'รอ Select All ปรากฎ'
 WebUI.waitForElementPresent(findTestObject('Predicted in details/Show All Multiple Verbatim Predicted Result/label_Select All'), 
@@ -822,5 +826,5 @@ WebUI.verifyElementPresent(findTestObject('Predicted in details/Multiple Predict
 WebUI.click(findTestObject('Predicted in details/Multiple Prediction By SAI/button_Export10'))
 
 'ปิดเบราเซอร์'
-WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
 

@@ -20,105 +20,105 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'เ�?ิดเ�?ราเ�?อร�?'
-WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
+'เ�?ิดเ�?ราเ�?อร�?'
+not_run: WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
 
-'�?ยายห�?�?าต�?า�? เ�?ราเ�?อร�?'
-WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
+'�?ยายห�?�?าต�?า�? เ�?ราเ�?อร�?'
+not_run: WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 
-'เ�?�?าสู�? URL'
-WebUI.navigateToUrl('192.168.11.59', FailureHandling.CONTINUE_ON_FAILURE)
-
-'login'
-WebUI.click(findTestObject('Page_Guru TMDA/span_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+'เ�?�?าสู�? URL'
+not_run: WebUI.navigateToUrl('192.168.11.59', FailureHandling.CONTINUE_ON_FAILURE)
 
 'login'
-WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Page_Guru TMDA/span_Login'), FailureHandling.CONTINUE_ON_FAILURE)
 
 'login'
-WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-valid ng'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
 
 'login'
-WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.setText(findTestObject('Page_Guru TMDA (1)/input_ng-untouched ng-pristine'), 'piew', FailureHandling.CONTINUE_ON_FAILURE)
 
-'�?ลิ�?เม�?ู User Management'
+'login'
+not_run: WebUI.submit(findTestObject('Page_Guru TMDA (1)/button_Login'), FailureHandling.CONTINUE_ON_FAILURE)
+
+'�?ลิ�?เม�?ู User Management'
 WebUI.click(findTestObject('Change role/Page_Guru TMDA/a_User Management'))
 
-'�?รอ�?�?�?อ�?วามล�?�?�?�?�?อ�?�?�?�?หา'
+'�?รอ�?�?�?อ�?วามล�?�?�?�?�?อ�?�?�?�?หา'
 WebUI.setText(findTestObject('Change role/Page_Guru TMDA (2)/input_ng-untouched ng-valid ng'), 'fortest')
 
-'�?ด�?ุ�?ม�?�?�?�?�? Profile'
+'�?ด�?ุ�?ม�?�?�?�?�? Profile'
 WebUI.click(findTestObject('Edit user profile/list/i_fa fa-pencil-square-o'))
 
-'�?ดสั�?ลั�?ษณ�?ดิ�?สอหลั�?�?ื�?อ'
+'�?ดสั�?ลั�?ษณ�?ดิ�?สอหลั�?�?ื�?อ'
 WebUI.click(findTestObject('Edit user profile/Edit//i_fa fa-pencil name'))
 
-'�?ดสั�?ลั�?ษณ�?ดิ�?สอหลั�?อีเมล'
+'�?ดสั�?ลั�?ษณ�?ดิ�?สอหลั�?อีเมล'
 WebUI.click(findTestObject('Edit user profile/Edit/i_fa fa-pencil email'))
 
-'ล�?�?�?อ�?วาม�?�?�?ล�?อ�?�?�?อ�?วาม First name'
+'ล�?�?�?อ�?วาม�?�?�?ล�?อ�?�?�?อ�?วาม First name'
 WebUI.setText(findTestObject('Edit user profile/Edit//input_firstname'), 'e')
 
-'ล�?�?�?อ�?วาม�?�?�?ล�?อ�?�?�?อ�?วาม First name'
+'ล�?�?�?อ�?วาม�?�?�?ล�?อ�?�?�?อ�?วาม First name'
 WebUI.sendKeys(findTestObject('Edit user profile/Edit//input_firstname'), Keys.chord(Keys.BACK_SPACE), FailureHandling.STOP_ON_FAILURE)
 
-'ตรว�?สอ�?�?ุ�?ม Submit �?ม�?สามารถ�?ด�?ด�?'
+'ตรว�?สอ�?�?ุ�?ม Submit �?ม�?สามารถ�?ด�?ด�?'
 WebUI.verifyElementNotClickable(findTestObject('Edit user profile/Edit/button_SUBMIT'))
 
-'�?รอ�?�?ื�?อเ�?�?�?ตัวเล�?'
+'�?รอ�?�?ื�?อเ�?�?�?ตัวเล�?'
 WebUI.setText(findTestObject('Edit user profile/Edit//input_firstname'), '55555')
 
-'ตรว�?สอ�?�?ุ�?ม Submit �?ม�?สามารถ�?ด�?ด�?'
+'ตรว�?สอ�?�?ุ�?ม Submit �?ม�?สามารถ�?ด�?ด�?'
 WebUI.verifyElementNotClickable(findTestObject('Edit user profile/Edit/button_SUBMIT'))
 
-'�?รอ�?�?ื�?อที�?ถู�?รู�?�?�?�?'
+'�?รอ�?�?ื�?อที�?ถู�?รู�?�?�?�?'
 WebUI.setText(findTestObject('Edit user profile/Edit//input_firstname'), 'Piratchana')
 
-'ล�?�?�?อ�?วาม�?�?�?ล�?อ�?�?�?อ�?วาม Last name'
+'ล�?�?�?อ�?วาม�?�?�?ล�?อ�?�?�?อ�?วาม Last name'
 WebUI.setText(findTestObject('Edit user profile/Edit//input_lastname'), 'e')
 
-'ล�?�?�?อ�?วาม�?�?�?ล�?อ�?�?�?อ�?วาม Last name'
+'ล�?�?�?อ�?วาม�?�?�?ล�?อ�?�?�?อ�?วาม Last name'
 WebUI.sendKeys(findTestObject('Edit user profile/Edit//input_lastname'), Keys.chord(Keys.BACK_SPACE), FailureHandling.STOP_ON_FAILURE)
 
-'ตรว�?สอ�?�?ุ�?ม Submit �?ม�?สามารถ�?ด�?ด�?'
+'ตรว�?สอ�?�?ุ�?ม Submit �?ม�?สามารถ�?ด�?ด�?'
 WebUI.verifyElementNotClickable(findTestObject('Edit user profile/Edit/button_SUBMIT'))
 
-'�?รอ�?�?ามส�?ุลเ�?�?�?ตัวเล�?'
+'�?รอ�?�?ามส�?ุลเ�?�?�?ตัวเล�?'
 WebUI.setText(findTestObject('Edit user profile/Edit//input_lastname'), '55555')
 
-'ตรว�?สอ�?�?ุ�?ม Submit �?ม�?สามารถ�?ด�?ด�?'
+'ตรว�?สอ�?�?ุ�?ม Submit �?ม�?สามารถ�?ด�?ด�?'
 WebUI.verifyElementNotClickable(findTestObject('Edit user profile/Edit/button_SUBMIT'))
 
-'�?รอ�?�?ามส�?ุลที�?ถู�?รู�?�?�?�?'
+'�?รอ�?�?ามส�?ุลที�?ถู�?รู�?�?�?�?'
 WebUI.setText(findTestObject('Edit user profile/Edit//input_lastname'), 'Maksub')
 
-'ล�?�?�?อ�?วาม�?�?�?ล�?อ�?�?�?อ�?วาม Email'
+'ล�?�?�?อ�?วาม�?�?�?ล�?อ�?�?�?อ�?วาม Email'
 WebUI.setText(findTestObject('Edit user profile/Edit/input_email'), 'e')
 
-'ล�?�?�?อ�?วาม�?�?�?ล�?อ�?�?�?อ�?วาม Email'
+'ล�?�?�?อ�?วาม�?�?�?ล�?อ�?�?�?อ�?วาม Email'
 WebUI.sendKeys(findTestObject('Edit user profile/Edit/input_email'), Keys.chord(Keys.BACK_SPACE), FailureHandling.STOP_ON_FAILURE)
 
-'ตรว�?สอ�?�?ุ�?ม Submit �?ม�?สามารถ�?ด�?ด�?'
+'ตรว�?สอ�?�?ุ�?ม Submit �?ม�?สามารถ�?ด�?ด�?'
 WebUI.verifyElementNotClickable(findTestObject('Edit user profile/Edit/button_SUBMIT'))
 
-'�?รอ�?อีเมล�?ม�?�?ส�? @ �?ละ�?ม�?มี .co'
+'�?รอ�?อีเมล�?ม�?�?ส�? @ �?ละ�?ม�?มี .co'
 WebUI.setText(findTestObject('Edit user profile/Edit/input_email'), 'Cremecreme')
 
-'ตรว�?สอ�?�?ุ�?ม Submit �?ม�?สามารถ�?ด�?ด�?'
+'ตรว�?สอ�?�?ุ�?ม Submit �?ม�?สามารถ�?ด�?ด�?'
 WebUI.verifyElementNotClickable(findTestObject('Edit user profile/Edit/button_SUBMIT'))
 
-'�?รอ�?อีเมลที�?ถู�?รู�?�?�?�?'
+'�?รอ�?อีเมลที�?ถู�?รู�?�?�?�?'
 WebUI.setText(findTestObject('Edit user profile/Edit/input_email'), 'Creme@mail.com')
 
-'�?ด�?ุ�?ม Submit'
+'�?ด�?ุ�?ม Submit'
 WebUI.click(findTestObject('Edit user profile/Edit/button_SUBMIT'))
 
-'ตรว�?สอ�?�?าร�?�?�?�?เตือ�? Edit Profile Successful'
+'ตรว�?สอ�?�?าร�?�?�?�?เตือ�? Edit Profile Successful'
 WebUI.verifyElementPresent(findTestObject('Edit user profile/Edit/div_Edit Profile Successful.'), 2, FailureHandling.CONTINUE_ON_FAILURE)
 
-'�?ด�?ุ�?ม�?ิด�?าร�?�?�?�?เตือ�?'
+'�?ด�?ุ�?ม�?ิด�?าร�?�?�?�?เตือ�?'
 WebUI.click(findTestObject('Edit user profile/Edit/button_'))
 
-'�?ิดเ�?ราเ�?อร�?'
-WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
+'�?ิดเ�?ราเ�?อร�?'
+not_run: WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
 
