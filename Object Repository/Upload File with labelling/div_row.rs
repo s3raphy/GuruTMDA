@@ -4,6 +4,12 @@
    <name>div_row</name>
    <tag></tag>
    <elementGuidId>ef5f189a-fa0b-40ee-9678-b2e544e25c4b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -14,14 +20,14 @@
       <value>div</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <isSelected>false</isSelected>
+      <matchCondition>contains</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>row</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//a</value>
+         <value>//a[count(. | //*[text() = 'ดูตัวอย่างไฟล์เพิ่มเติม']) = count(//*[text() = 'ดูตัวอย่างไฟล์เพิ่มเติม'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -27,8 +27,8 @@
       <value>/help</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>ดูตัวอย่างไฟล์เพิ่มเติม</value>
